@@ -1,0 +1,3793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LabelsTitle" lastModified="2009-04-30T00:00:00">
+    <value>Labels</value>
+    <comment>The title of this class.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LabelsDescription" lastModified="2009-04-30T00:00:00">
+    <value>Contains localizable resources for common user interface labels.</value>
+    <comment>The description of this class.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LabelsTitlePlural" lastModified="2009-04-30T00:00:00">
+    <value>Labels</value>
+    <comment>The title plural of this class.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="By" lastModified="2009-10-23T00:00:00">
+    <value>by</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="On" lastModified="2010-11-11T00:00:00">
+    <value>on</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Version" lastModified="2010-10-03T00:00:00">
+    <value>Version</value>
+    <comment>Version</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Notes" lastModified="2010-10-03T00:00:00">
+    <value>Notes</value>
+    <comment>Notes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Layout" lastModified="2009-10-23T00:00:00">
+    <value>Layout</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoText" lastModified="2011-01-05T09:49:39">
+    <value>There is no text.</value>
+    <comment>Phrase: There is no text.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Gadgets" lastModified="2009-10-23T00:00:00">
+    <value>Gadgets</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LoggedAs" lastModified="2009-05-26T00:00:00">
+    <value>You do not have the permissions to access this page. Try using other credentials or contact the administrator.</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhatToDo" lastModified="2009-05-26T00:00:00">
+    <value>What do you want to do?</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HasBeenLockedForEditingBySince" lastModified="2010-10-04T00:00:00">
+    <value>{0} has been locked for editing by {1} since {2}</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhatDoYouWantToDoNow" lastModified="2009-01-14T00:00:00">
+    <value>What do you want to do now?</value>
+    <comment>phrase: What do you want to do now?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Logout" lastModified="2009-05-26T00:00:00">
+    <value>Logout</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SwitchUser" lastModified="2009-05-26T00:00:00">
+    <value>Switch User</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangePassword" lastModified="2009-05-26T00:00:00">
+    <value>Change Password</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangePasswordText" lastModified="2009-05-26T00:00:00">
+    <value>Change password</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RegisterUser" lastModified="2009-05-26T00:00:00">
+    <value>Create User</value>
+    <comment>Create User</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="IncorrectUsernamePassword" lastModified="2010-01-06T00:00:00">
+    <value>Incorrect Username/Password Combination</value>
+    <comment>Label for incorrect Username/Password combination.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AutomaticallyNavigated" lastModified="2009-05-26T00:00:00">
+    <value>You were automatically navigated form "{0}" because you are not authorized to access that page!</value>
+    <comment>Message</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PasswordRecovery" lastModified="2009-05-26T00:00:00">
+    <value>Password Recovery</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ForgotYourPassword" lastModified="2009-05-26T00:00:00">
+    <value>Forgot your password?</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Register" lastModified="2009-05-26T00:00:00">
+    <value>Register</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Help" lastModified="2009-05-26T00:00:00">
+    <value>Help</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Status" lastModified="2009-05-26T00:00:00">
+    <value>Status</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Password" lastModified="2009-05-21T00:00:00">
+    <value>Password</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OldPasswordText" lastModified="2010-09-20T00:00:00">
+    <value>Old password</value>
+    <comment>Change password - Old password</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NewPasswordText" lastModified="2010-09-20T00:00:00">
+    <value>New password</value>
+    <comment>Change password - New password</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ConfirmNewPasswordText" lastModified="2010-09-20T00:00:00">
+    <value>Confirm password</value>
+    <comment>Change password - Confirm new password</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Provider" lastModified="2009-05-21T00:00:00">
+    <value>Authentication Provider</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Username" lastModified="2009-05-21T00:00:00">
+    <value>Username</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserFirstAndLastNameName" lastModified="2010-02-02T00:00:00">
+    <value>Name</value>
+    <comment>Word: Name</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FirstName" lastModified="2010-02-02T00:00:00">
+    <value>First name</value>
+    <comment>Phrase: First Name</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastName" lastModified="2010-02-02T00:00:00">
+    <value>Last name</value>
+    <comment>Phrase: Last Name</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Roles" lastModified="2009-05-21T00:00:00">
+    <value>Roles</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Users" lastModified="2009-05-21T00:00:00">
+    <value>Users</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Email" lastModified="2009-05-21T00:00:00">
+    <value>Email</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Done" lastModified="2009-05-21T00:00:00">
+    <value>Done</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddTheseTags" lastModified="2009-05-21T00:00:00">
+    <value>Add these tags</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BasicTemplates" lastModified="2009-05-21T00:00:00">
+    <value>Basic Templates</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectASection" lastModified="2009-05-21T00:00:00">
+    <value>Select a section</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectACategory" lastModified="2009-05-21T00:00:00">
+    <value>Select a category</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectATag" lastModified="2010-09-08T00:00:00">
+    <value>Select a tag</value>
+    <comment>phrase: Select a tag</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddTagsExample" lastModified="2009-05-21T00:00:00">
+    <value>Separate tags with a space. To join two words in one tag use double quotes.&lt;br /&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;em&gt;sport London summer "daily commute"&lt;/em&gt;</value>
+    <comment>Instruction</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectAMasterpage" lastModified="2009-05-21T00:00:00">
+    <value>Select a masterpage</value>
+    <comment>SelectAMasterpage</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ActionsWithRole" lastModified="2009-05-21T00:00:00">
+    <value>Actions with role</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreationDate" lastModified="2009-05-21T00:00:00">
+    <value>Creation Date</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Submit" lastModified="2009-05-21T00:00:00">
+    <value>Submit</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="User" lastModified="2009-05-28T00:00:00">
+    <value>User</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LoginCaps" lastModified="2010-07-26T00:00:00">
+    <value>Login</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Login" lastModified="2009-05-21T00:00:00">
+    <value>Login</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PasswordEmpty" lastModified="2009-05-21T00:00:00">
+    <value>Password is required</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UsernameEmpty" lastModified="2009-05-21T00:00:00">
+    <value>Username is required</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RememberMe" lastModified="2009-05-21T00:00:00">
+    <value>Remember me on this computer</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Create" lastModified="2009-04-13T00:00:00">
+    <value>Create</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateEllipsis" lastModified="2009-04-13T00:00:00">
+    <value>Create...</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateA" lastModified="2010-01-07T00:00:00">
+    <value>Create a</value>
+    <comment>phrase: Create a</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateAParameter" lastModified="2010-01-07T00:00:00">
+    <value>Create a {0}</value>
+    <comment>phrase: Create a {0}</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Edit" lastModified="2009-04-13T00:00:00">
+    <value>Edit</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditEllipsis" lastModified="2009-04-13T00:00:00">
+    <value>Edit...</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="View" lastModified="2009-04-13T00:00:00">
+    <value>View</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Change" lastModified="2009-04-13T00:00:00">
+    <value>Change</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangeOwner" lastModified="2009-04-13T00:00:00">
+    <value>Change owner</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangeBtnIn" lastModified="2009-04-13T00:00:00">
+    <value>&lt;strong class="sfLinkBtnIn"&gt;Change&lt;/strong&gt;</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangeEllipsis" lastModified="2009-04-13T00:00:00">
+    <value>Change...</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Save" lastModified="2009-04-01T00:00:00">
+    <value>Save</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="New" lastModified="2009-04-01T00:00:00">
+    <value>New</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Delete" lastModified="2009-04-01T00:00:00">
+    <value>Delete</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Compare" lastModified="2010-10-03T00:00:00">
+    <value>Compare</value>
+    <comment>Compare</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SaveChanges" lastModified="2009-05-18T00:00:00">
+    <value>Save changes</value>
+    <comment>Phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Cancel" lastModified="2009-05-18T00:00:00">
+    <value>Cancel</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Views" lastModified="2009-05-18T00:00:00">
+    <value>Views</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="List" lastModified="2009-05-18T00:00:00">
+    <value>List</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Grid" lastModified="2009-05-18T00:00:00">
+    <value>Grid</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Boxes" lastModified="2009-05-18T00:00:00">
+    <value>Boxes</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Alphabetically" lastModified="2009-05-18T00:00:00">
+    <value>Alphabetically</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Categorized" lastModified="2009-05-18T00:00:00">
+    <value>Categorized</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="or" lastModified="2009-05-18T00:00:00">
+    <value>or</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Default" lastModified="2009-05-18T00:00:00">
+    <value>Default</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Search" lastModified="2009-05-29T00:00:00">
+    <value>Search...</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SearchLabel" lastModified="2010-10-27T00:00:00">
+    <value>Search</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToSimpleSearch" lastModified="2010-05-14T00:00:00">
+    <value>Back to simple search</value>
+    <comment>Phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AdvancedSearch" lastModified="2010-05-14T00:00:00">
+    <value>Advanced Search</value>
+    <comment>Phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Searching" lastModified="2010-05-12T00:00:00">
+    <value>Searching...</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateNewLabel" lastModified="2009-05-29T00:00:00">
+    <value>Create a label</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SaveChangesLabel" lastModified="2009-05-29T00:00:00">
+    <value>Save changes</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DeleteLabel" lastModified="2009-08-06T00:00:00">
+    <value>Delete</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SortBy" lastModified="2009-05-29T00:00:00">
+    <value>Sort by</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AssignToRole" lastModified="2009-05-29T00:00:00">
+    <value>Assign to role...</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UnassignFromRole" lastModified="2009-05-29T00:00:00">
+    <value>Unassign from role...</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FindUsers" lastModified="2009-05-29T00:00:00">
+    <value>Find Users...</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseSearch" lastModified="2009-05-29T00:00:00">
+    <value>Close search</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Close" lastModified="2010-01-14T00:00:00">
+    <value>Close</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AssignUsersTo" lastModified="2009-05-29T00:00:00">
+    <value>Assign users to</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UnassignUsersFrom" lastModified="2009-05-29T00:00:00">
+    <value>Unassign users from</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Assign" lastModified="2009-05-29T00:00:00">
+    <value>Assign</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Unassign" lastModified="2009-05-29T00:00:00">
+    <value>Unassign</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Sort" lastModified="2009-05-29T00:00:00">
+    <value>Sort</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Alphabet" lastModified="2009-05-29T00:00:00">
+    <value>Alphabet</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Date" lastModified="2009-05-29T00:00:00">
+    <value>Date</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DateOwner" lastModified="2010-09-30T00:00:00">
+    <value>Date / Owner</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ByDate" lastModified="2009-05-29T00:00:00">
+    <value>By date</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditAllLabelsListedBelow" lastModified="2009-05-29T00:00:00">
+    <value>Edit all labels listed below</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Finished" lastModified="2009-05-29T00:00:00">
+    <value>Finished</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseThisBatchEditor" lastModified="2009-05-29T00:00:00">
+    <value>Close this batch editor</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ThisLabelIsUsedIn" lastModified="2009-05-18T00:00:00">
+    <value>This label is used in</value>
+    <comment>Phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Description" lastModified="2009-05-18T00:00:00">
+    <value>Description</value>
+    <comment>Word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Role" lastModified="2009-07-02T00:00:00">
+    <value>Role</value>
+    <comment>Role label.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HowToUseInAspxOrAscxFile" lastModified="2009-05-18T00:00:00">
+    <value>How to use in aspx or ascx file?</value>
+    <comment>Phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UseThisKey" lastModified="2009-05-18T00:00:00">
+    <value>Use this key</value>
+    <comment>Phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DefaultPolicy" lastModified="2009-06-01T00:00:00">
+    <value>Default policy</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateNewPolicy" lastModified="2009-06-01T00:00:00">
+    <value>Create new policy</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowPoliciesFor" lastModified="2009-06-01T00:00:00">
+    <value>policies for:</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateNew" lastModified="2009-06-01T00:00:00">
+    <value>Create new</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Reorder" lastModified="2009-06-01T00:00:00">
+    <value>Reorder</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DoneReordering" lastModified="2009-06-01T00:00:00">
+    <value>Done reordering</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhichImageToUpload" lastModified="2010-05-19T00:00:00">
+    <value>Which image to upload?</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhereToStoreTheUploadedImage" lastModified="2010-05-19T00:00:00">
+    <value>Where to store the uploaded image?</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SetAlternativeText" lastModified="2010-05-19T00:00:00">
+    <value>Alternative text &lt;span class='sfNote'&gt;(for visually impaired people and search engines)&lt;/span&gt;</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhatTitleToDipsplayForThisDocument" lastModified="2010-08-18T00:00:00">
+    <value>What title to dipsplay for this document?</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizingOptions" lastModified="2010-05-19T00:00:00">
+    <value>Resizing options</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowOriginal" lastModified="2010-05-19T00:00:00">
+    <value>Don't resize, show original {0}</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizeWidthTo" lastModified="2010-05-19T00:00:00">
+    <value>Resize the {0} width to...</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizeSizeThumbnail" lastModified="2010-05-19T00:00:00">
+    <value>Thumbnail: 100 px width</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizeSizeSmall" lastModified="2010-05-19T00:00:00">
+    <value>Small: 240 px width</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizeSizeMedium" lastModified="2010-05-19T00:00:00">
+    <value>Medium: 500 px width</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizeSizeLarge" lastModified="2010-05-19T00:00:00">
+    <value>Large: 800 px width</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResizeSizeExtraLarge" lastModified="2010-05-19T00:00:00">
+    <value>Extra-large: 1024 px width</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FilterByResourceEntryType" lastModified="2010-10-18T00:00:00">
+    <value>Filter by type</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Filter" lastModified="2010-06-01T00:00:00">
+    <value>Filter</value>
+    <comment>The text to be shown in the buton inside the DateFilteringWidget custom range section.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectCriteria" lastModified="2010-05-13T00:00:00">
+    <value>- Select criteria -</value>
+    <comment>The text to be shown for select option custom sorting expression dialog.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomRange" lastModified="2010-05-31T00:00:00">
+    <value>Custom range...</value>
+    <comment>The text of the DateFilteringWidget show-custom-range button.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllTheTime" lastModified="2010-06-02T00:00:00">
+    <value>Any time</value>
+    <comment>The text of the DateFilteringWidget clear date filter button.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastOneDay" lastModified="2010-05-31T00:00:00">
+    <value>Last &lt;strong&gt;1 day&lt;/strong&gt;</value>
+    <comment>Phrase: Last 1 day</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastThreeDays" lastModified="2010-05-31T00:00:00">
+    <value>Last &lt;strong&gt;3 days&lt;/strong&gt;</value>
+    <comment>Phrase: Last 3 days</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastOneWeek" lastModified="2010-05-31T00:00:00">
+    <value>Last &lt;strong&gt;1 week&lt;/strong&gt;</value>
+    <comment>Phrase: Last 1 week</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastOneMonth" lastModified="2010-06-03T00:00:00">
+    <value>Last &lt;strong&gt;1 month&lt;/strong&gt;</value>
+    <comment>Phrase: Last 1 month</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastSixMonths" lastModified="2010-06-03T00:00:00">
+    <value>Last &lt;strong&gt;6 months&lt;/strong&gt;</value>
+    <comment>Phrase: Last 6 months</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastOneYear" lastModified="2010-06-03T00:00:00">
+    <value>Last &lt;strong&gt;1 year&lt;/strong&gt;</value>
+    <comment>Phrase: Last 1 year</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastTwoYears" lastModified="2010-06-03T00:00:00">
+    <value>Last &lt;strong&gt;2 years&lt;/strong&gt;</value>
+    <comment>Phrase: Last 2 years</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastFiveYears" lastModified="2010-06-03T00:00:00">
+    <value>Last &lt;strong&gt;5 years&lt;/strong&gt;</value>
+    <comment>Phrase: Last 5 years</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddDataField" lastModified="2010-09-13T00:00:00">
+    <value>Add a data field</value>
+    <comment>Button: Add a data field.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UpdateDataField" lastModified="2010-09-13T00:00:00">
+    <value>Update data field</value>
+    <comment>Button: Update data field.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DeleteDataField" lastModified="2010-09-13T00:00:00">
+    <value>Delete data field</value>
+    <comment>Button: Delete data field.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTitle" lastModified="2010-10-01T00:00:00">
+    <value>Title</value>
+    <comment>Label: Title</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldName" lastModified="2010-09-13T00:00:00">
+    <value>Name</value>
+    <comment>Label: Name</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldType" lastModified="2010-09-13T00:00:00">
+    <value>Type</value>
+    <comment>Label: Type</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldDBType" lastModified="2010-09-13T00:00:00">
+    <value>DB Type</value>
+    <comment>Label: DB Type</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldMsSQLDBType" lastModified="2010-09-13T00:00:00">
+    <value>SQL DB Type</value>
+    <comment>Label: SQL DB Type</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldMaxLength" lastModified="2010-09-13T00:00:00">
+    <value>Max length</value>
+    <comment>Label: Max length</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldDefaultValue" lastModified="2010-09-13T00:00:00">
+    <value>Default value</value>
+    <comment>Label: Default value</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldPrecision" lastModified="2010-09-13T00:00:00">
+    <value>Precision</value>
+    <comment>Label: Precision</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTaxonomyProvider" lastModified="2010-09-13T00:00:00">
+    <value>Classification provider</value>
+    <comment>Label: Classification provider</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTaxonomy" lastModified="2010-09-13T00:00:00">
+    <value>Classification</value>
+    <comment>Label: Classification</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldAllowMultipleTaxonomies" lastModified="2010-09-13T00:00:00">
+    <value>Allow multiple classifications selection</value>
+    <comment>Label: Allow multiple classifications selection</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeGuid" lastModified="2010-10-13T00:00:00">
+    <value>Unique identifier</value>
+    <comment>Meta type title: Unique identifier</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeLString" lastModified="2010-09-13T00:00:00">
+    <value>Localized text</value>
+    <comment>Meta type title: Localized text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeString" lastModified="2010-09-13T00:00:00">
+    <value>Text</value>
+    <comment>Meta type title: Text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeInt" lastModified="2010-09-13T00:00:00">
+    <value>Integer</value>
+    <comment>Meta type title: Integer</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeDecimal" lastModified="2010-09-13T00:00:00">
+    <value>Decimal</value>
+    <comment>Meta type title: Decimal</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeDate" lastModified="2010-09-13T00:00:00">
+    <value>Date</value>
+    <comment>Meta type title: Date</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeBoolean" lastModified="2010-09-13T00:00:00">
+    <value>Yes/No</value>
+    <comment>Meta type title: Boolean</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldTypeTaxonomy" lastModified="2010-09-13T00:00:00">
+    <value>Classification</value>
+    <comment>Meta type title: Taxonomy</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MetaFieldDuplicateFieldName" lastModified="2010-09-13T00:00:00">
+    <value>A field by this name is already defined for this type.</value>
+    <comment>Meta type error message: A field by this name is already defined for this type.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditStructure" lastModified="2010-10-12T00:00:00">
+    <value>&lt;span class='sfLinkBtnIn'&gt;Change Data structure...&lt;/span&gt;</value>
+    <comment>Publishing Structure Field Control: Edit structure link</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NumFieldsDefined" lastModified="2010-10-12T00:00:00">
+    <value>{0} Fields defined</value>
+    <comment>Publishing Structure Field Control: {0} Fields defined</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoFieldsDefinedForThisPublishingPoint" lastModified="2010-10-12T00:00:00">
+    <value>No fields defined for this publishing point</value>
+    <comment>Validation error: No fields defined for this publishing point</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllProvidersText" lastModified="2009-06-30T00:00:00">
+    <value>All Providers</value>
+    <comment>The text to be shown for select option in user/roles admin UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllUsers" lastModified="2009-06-30T00:00:00">
+    <value>All Users</value>
+    <comment>The text to be shown All Users button in User UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllRoles" lastModified="2009-12-17T00:00:00">
+    <value>All Roles</value>
+    <comment>The text to be shown All Roles button in User UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllProviders" lastModified="2010-10-06T00:00:00">
+    <value>All Providers</value>
+    <comment>The text to be shown All Providers button in User UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="YouHaveUnsavedChangesWantToLeavePage" lastModified="2010-10-14T00:00:00">
+    <value>Are you sure you want to navigate away from this page?
+
+You have unsaved changes.
+
+Press OK to continue, or Cancel to stay on the current page.</value>
+    <comment>phrase: You have unsaved changes! Do you want to leave this page?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BrowseUsers" lastModified="2009-06-30T00:00:00">
+    <value>Browse Users</value>
+    <comment>The text to be shown for Browse Users button in user admin UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UsersByRole" lastModified="2009-06-30T00:00:00">
+    <value>Users by role</value>
+    <comment>The text to be shown for Users by role section.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UsersWithoutRole" lastModified="2009-06-30T00:00:00">
+    <value>Users without role</value>
+    <comment>The text to be shown for Users without role section.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ManageRoles" lastModified="2009-06-30T00:00:00">
+    <value>Manage Roles</value>
+    <comment>The text to be shown for Manage Roles section.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateRoleLabel" lastModified="2009-07-01T00:00:00">
+    <value>Create a role</value>
+    <comment>The text to be shown for Create Role form.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreInfo" lastModified="2009-07-01T00:00:00">
+    <value>More info</value>
+    <comment>TMore info</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ExampleForNewRoleName" lastModified="2009-07-01T00:00:00">
+    <value>&lt;strong&gt;Example: &lt;/strong&gt;&lt;q&gt;Authors&lt;/q&gt;</value>
+    <comment>Example role name.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhatIsRoleQuestion" lastModified="2009-07-01T00:00:00">
+    <value>What is a role?</value>
+    <comment>What is a role?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RoleHelpExplanation" lastModified="2009-07-01T00:00:00">
+    <value>A role is a group of users associated with a set of user permissions.</value>
+    <comment>Role Help Explanation</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastModified" lastModified="2009-07-02T00:00:00">
+    <value>Last modified</value>
+    <comment>phrase: Last modified</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UsedIn" lastModified="2009-07-02T00:00:00">
+    <value>Used in</value>
+    <comment>phrase: Used in</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="QuestionBeforeDeletingUser" lastModified="2009-07-02T00:00:00">
+    <value>Are you sure you want to delete this user?</value>
+    <comment>The question asked before deleting a membership user in Users administration.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="QuestionBeforeDeletingUsers" lastModified="2009-12-24T00:00:00">
+    <value>Are you sure you want to delete the selected users?</value>
+    <comment>The question asked before deleting multiple membership users in Users administration.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="QuestionBeforeDeletingItem" lastModified="2009-11-19T00:00:00">
+    <value>Are you sure you want to delete this item?</value>
+    <comment>The question asked before deleting a content item.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MandatoryFields" lastModified="2009-07-02T00:00:00">
+    <value>Mandatory fields</value>
+    <comment>Mandatory fields label.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MembershipInfo" lastModified="2009-07-02T00:00:00">
+    <value>Membership Info</value>
+    <comment>Membership Info label.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToUsers" lastModified="2009-07-02T00:00:00">
+    <value>Back to users</value>
+    <comment>Text for Back to users link in User administration UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToComments" lastModified="2010-11-12T00:00:00">
+    <value>Back to Comments</value>
+    <comment>phrase: Back to Comments</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToProfile" lastModified="2010-09-20T00:00:00">
+    <value>Back to profile</value>
+    <comment>Text for back to profile link in change password dialog.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ReturnToPolicies" lastModified="2009-07-02T00:00:00">
+    <value>Return to policies</value>
+    <comment>Return to policies</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserCommentLabelText" lastModified="2009-07-02T00:00:00">
+    <value>Comment</value>
+    <comment>Text for comment label in User administration UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserApproveLabelText" lastModified="2009-07-03T00:00:00">
+    <value>Approve user</value>
+    <comment>Text for approve user label in User administration UI.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SectionSaved" lastModified="2009-07-20T00:00:00">
+    <value>Configuration section saved successfully.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ConfirmDelete" lastModified="2009-07-20T00:00:00">
+    <value>Are you sure you want to delete this section?</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Show" lastModified="2009-07-22T00:00:00">
+    <value>Show</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LabelsIn" lastModified="2009-07-22T00:00:00">
+    <value>Labels in</value>
+    <comment>Labels in</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhatIsThisLabelUsedFor" lastModified="2009-07-27T00:00:00">
+    <value>What is this label used for.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Example" lastModified="2009-07-27T00:00:00">
+    <value>Example</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ThisIsTheButtonForSavingNews" lastModified="2009-07-27T00:00:00">
+    <value>This is the button for saving news</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Key" lastModified="2009-07-27T00:00:00">
+    <value>Key</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UsedInCodeToDisplayThisLabel" lastModified="2009-07-27T00:00:00">
+    <value>Used in code to display this label</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Type" lastModified="2009-07-27T00:00:00">
+    <value>Type</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ThisIsTheClassIdValueUsedInCode" lastModified="2009-07-27T00:00:00">
+    <value>This is the "class-id" value used in the code</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Label" lastModified="2009-07-27T00:00:00">
+    <value>Label</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="All" lastModified="2009-07-28T00:00:00">
+    <value>All</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="None" lastModified="2010-11-03T00:00:00">
+    <value>None</value>
+    <comment>word: None</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Selected" lastModified="2009-07-28T00:00:00">
+    <value>Selected</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Select" lastModified="2009-09-24T00:00:00">
+    <value>Select</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastEdited" lastModified="2010-10-03T00:00:00">
+    <value>Last edited</value>
+    <comment>LastEdited</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectDotDotDot" lastModified="2010-05-19T00:00:00">
+    <value>Select...</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangeDotDotDot" lastModified="2010-08-18T00:00:00">
+    <value>Change...</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectParameter" lastModified="2010-03-25T00:00:00">
+    <value>Select {0}</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectMasterPage" lastModified="2009-11-06T00:00:00">
+    <value>Select the master page you have uploaded</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NameRequired" lastModified="2009-11-06T00:00:00">
+    <value>Name cannot be empty</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UrlNameInvalid" lastModified="2009-11-06T00:00:00">
+    <value>Url cannot contain spaces or special characters!</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UrlNameCannotBeEmpty" lastModified="2010-03-15T00:00:00">
+    <value>Url cannot be empty.</value>
+    <comment>phrase: Url cannot be empty.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhichVersionsYouWantToDelete" lastModified="2009-07-28T00:00:00">
+    <value>Which versions you want to delete?</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LabelHasBeenDeleted" lastModified="2009-07-29T00:00:00">
+    <value>"{0}" label has been deleted.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LabelHasBeenCreated" lastModified="2009-07-29T00:00:00">
+    <value>"{0}" label has been created.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LabelHasBeenUpdated" lastModified="2009-07-29T00:00:00">
+    <value>"{0}" label has been updated.</value>
+    <comment />
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangesHaveBeenSaved" lastModified="2009-07-30T00:00:00">
+    <value>Changes have been saved</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DefaultLabels" lastModified="2009-07-30T00:00:00">
+    <value>Default labels</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="YourChangedLabels" lastModified="2009-07-30T00:00:00">
+    <value>Your changed labels</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreAboutThisLabel" lastModified="2009-07-30T00:00:00">
+    <value>More about this label</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllLanguageVersions" lastModified="2009-07-30T00:00:00">
+    <value>All language versions</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditAllLabels" lastModified="2009-07-30T00:00:00">
+    <value>Edit all labels</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditDescription" lastModified="2009-07-30T00:00:00">
+    <value>Edit description</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToAllLabels" lastModified="2009-07-30T00:00:00">
+    <value>Back to all labels</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UsernameCannotBeEmpty" lastModified="2009-07-30T00:00:00">
+    <value>Enter your username</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PasswordCannotBeEmpty" lastModified="2009-07-30T00:00:00">
+    <value>Enter your password</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OldPasswordCannotBeEmpty" lastModified="2010-09-20T00:00:00">
+    <value>Enter your old password</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NewPasswordCannotBeEmpty" lastModified="2010-09-20T00:00:00">
+    <value>Enter your new password</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ConfirmNewPasswordCannotBeEmpty" lastModified="2010-09-20T00:00:00">
+    <value>Re-enter your new password</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LoginToManage" lastModified="2009-07-30T00:00:00">
+    <value>Login to manage the site</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoBookmarksMessage" lastModified="2009-09-25T00:00:00">
+    <value>There are no social bookmarks</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToAllItems" lastModified="2009-10-14T00:00:00">
+    <value>Back to all items</value>
+    <comment>phrase for module dialogs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackTo" lastModified="2010-10-14T00:00:00">
+    <value>Back to {0}</value>
+    <comment>Back to {0}</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToAllItemsParameter" lastModified="2010-03-18T00:00:00">
+    <value>Back to all {0}</value>
+    <comment>phrase: Back to all {0}</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ReturnToPages" lastModified="2009-10-16T00:00:00">
+    <value>Return to pages</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ReturnToTemplates" lastModified="2009-11-19T00:00:00">
+    <value>Back to Templates</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ReturnToProperties" lastModified="2009-11-05T00:00:00">
+    <value>Return to properties</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToRevisionHistory" lastModified="2009-10-14T00:00:00">
+    <value>Back to Revision History</value>
+    <comment>phrase for module dialogs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackToReviewedVersion" lastModified="2010-10-15T00:00:00">
+    <value>Back to reviewed version</value>
+    <comment>phrase for module dialogs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Properties" lastModified="2009-11-05T00:00:00">
+    <value>Properties</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Name" lastModified="2009-10-16T00:00:00">
+    <value>Name &lt;span class="sfExLab"&gt;(Displayed in navigation. &lt;strong&gt;Example:&lt;/strong&gt; &lt;em&gt;About Us&lt;/em&gt;)&lt;/span&gt;</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TemplateName" lastModified="2009-10-16T00:00:00">
+    <value>Name</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Parent" lastModified="2009-10-16T00:00:00">
+    <value>Section</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ParentParameter" lastModified="2009-10-16T00:00:00">
+    <value>Parent {0}</value>
+    <comment>Label: Parent {0}</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoSection" lastModified="2009-11-25T00:00:00">
+    <value>No section</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ParentSection" lastModified="2009-11-25T00:00:00">
+    <value>Parent Section</value>
+    <comment>ParentSection</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoParentSection" lastModified="2009-10-16T00:00:00">
+    <value>No parent section</value>
+    <comment>NoParentSection</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Url" lastModified="2009-10-16T00:00:00">
+    <value>URL</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateThisSection" lastModified="2009-10-16T00:00:00">
+    <value>Create this section</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateThisSectionAndAddAnother" lastModified="2009-10-16T00:00:00">
+    <value>Create this section and add another</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateSection" lastModified="2009-10-19T00:00:00">
+    <value>Create a Section</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditSectionProperties" lastModified="2009-11-10T00:00:00">
+    <value>Edit Section Properties</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreatePage" lastModified="2009-10-22T00:00:00">
+    <value>Create a Page</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateTemplate" lastModified="2009-11-17T00:00:00">
+    <value>Create a Template</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditPageProperties" lastModified="2009-11-10T00:00:00">
+    <value>Edit Page Properties</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditTemplateProperties" lastModified="2010-07-26T00:00:00">
+    <value>Edit template properties</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedSection" lastModified="2009-11-25T00:00:00">
+    <value>Selected section...</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedParentSection" lastModified="2009-11-25T00:00:00">
+    <value>Selected parent section...</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateThisPage" lastModified="2009-10-19T00:00:00">
+    <value>Create and go to select a template</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateThis" lastModified="2010-03-05T00:00:00">
+    <value>Create this</value>
+    <comment>phrase: Create this</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateThisTemplate" lastModified="2009-11-17T00:00:00">
+    <value>Create this template</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateThisPageAndAddAnother" lastModified="2009-10-19T00:00:00">
+    <value>Create and add another page</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectLayout" lastModified="2009-10-22T00:00:00">
+    <value>Select a Layout</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectAnotherTemplate" lastModified="2009-11-10T00:00:00">
+    <value>Select another Template</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ViewTemplate" lastModified="2009-10-22T00:00:00">
+    <value>View in a new window</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Title" lastModified="2009-11-02T00:00:00">
+    <value>Title</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToAddTitle" lastModified="2009-11-02T00:00:00">
+    <value>Click to add a title</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToAdd" lastModified="2010-03-04T00:00:00">
+    <value>Click to add</value>
+    <comment>Click to add</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PageDescription" lastModified="2009-11-02T00:00:00">
+    <value>Description</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToAddDescription" lastModified="2009-11-02T00:00:00">
+    <value>Click to add a description</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Keywords" lastModified="2009-11-02T00:00:00">
+    <value>Keywords</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToAddKeywords" lastModified="2009-11-02T00:00:00">
+    <value>Click to add keywords</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToAddTags" lastModified="2009-11-02T00:00:00">
+    <value>Click to add Tags</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToAddCategory" lastModified="2009-11-02T00:00:00">
+    <value>Click to add a Category</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowInNavigation" lastModified="2009-11-02T00:00:00">
+    <value>Show in navigation</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowInNavigationTemplate" lastModified="2009-11-02T00:00:00">
+    <value>Show in navigation all pages using this template &lt;br /&gt;&lt;span class="sfExLab"&gt;This option can be customized per individual page.&lt;/span&gt;</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoTemplate" lastModified="2009-11-06T00:00:00">
+    <value>No template - start from scratch</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UseAsDefaultTemplate" lastModified="2010-07-15T00:00:00">
+    <value>Use the selected template as a default template when you create a new page</value>
+    <comment>phrase: Use the selected template as a default template when you create a new page</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="IncludeScriptManger" lastModified="2009-11-03T00:00:00">
+    <value>Include ScriptManger</value>
+    <comment>Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="To" lastModified="2009-11-04T00:00:00">
+    <value>to</value>
+    <comment>word: to</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CapitalTo" lastModified="2011-01-05T09:49:39">
+    <value>To</value>
+    <comment>word: To</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CapitalFrom" lastModified="2010-06-16T00:00:00">
+    <value>From</value>
+    <comment>Word: From</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateAndAddAnother" lastModified="2009-11-04T00:00:00">
+    <value>Create and add another</value>
+    <comment>phrase: Create and add another</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Required" lastModified="2009-11-04T00:00:00">
+    <value>Required</value>
+    <comment>word: Required</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectPolicy" lastModified="2009-11-06T00:00:00">
+    <value>Select policy</value>
+    <comment>label: Select policy</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectAnotherPolicy" lastModified="2009-11-06T00:00:00">
+    <value>Select another policy...</value>
+    <comment>label: Select policy</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AdvancedFilter" lastModified="2009-11-12T00:00:00">
+    <value>Advanced filter</value>
+    <comment>phrase: Advanced filter</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AdvancedSynonymsNameInCode" lastModified="2009-11-12T00:00:00">
+    <value>Advanced &lt;em class='sfNote'&gt;(Synonyms, Name used in code)&lt;/em&gt;</value>
+    <comment>phrase: Advanced &lt;em class='sfNote'&gt;(Synonyms, Name used in code)&lt;/em&gt;</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Add" lastModified="2010-02-25T00:00:00">
+    <value>Add</value>
+    <comment>word: Add</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddTags" lastModified="2009-11-13T00:00:00">
+    <value>Add tags</value>
+    <comment>phrase: Add tags</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ExpandAll" lastModified="2009-11-17T00:00:00">
+    <value>Expand all</value>
+    <comment>phrase: Expand all</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CollapseAll" lastModified="2009-11-17T00:00:00">
+    <value>Collapse all</value>
+    <comment>phrase: Collapse all</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OnePageUsesTemplate" lastModified="2009-11-18T00:00:00">
+    <value>{0} page uses this template</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ManyPagesUseTemplate" lastModified="2009-11-18T00:00:00">
+    <value>{0} pages use this template</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UseTemplate" lastModified="2010-10-04T00:00:00">
+    <value>Use template</value>
+    <comment>Use template</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DontUseTemplate" lastModified="2010-10-04T00:00:00">
+    <value>Don't use template (start from scratch)</value>
+    <comment>Don't use template (start from scratch)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TemplatePagesMsg" lastModified="2009-11-18T00:00:00">
+    <value>Template changes will affect all of these pages:</value>
+    <comment>label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ResourceKey" lastModified="2009-11-18T00:00:00">
+    <value>Resource key</value>
+    <comment>phrase: Resource key</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedItems" lastModified="2009-11-20T00:00:00">
+    <value>Selected items</value>
+    <comment>phrase: Selected items</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllItems" lastModified="2009-11-20T00:00:00">
+    <value>All items</value>
+    <comment>phrase: All items</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Advanced" lastModified="2009-11-21T00:00:00">
+    <value>Advanced</value>
+    <comment>word: Advanced</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Simpler" lastModified="2009-11-21T00:00:00">
+    <value>Simple</value>
+    <comment>word: Simpler</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Loading" lastModified="2009-11-21T00:00:00">
+    <value>Loading...</value>
+    <comment>word: Loading</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Hide" lastModified="2009-11-23T00:00:00">
+    <value>Hide</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MarkAsSpam" lastModified="2009-11-23T00:00:00">
+    <value>Mark as Spam</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Publish" lastModified="2009-11-23T00:00:00">
+    <value>Publish</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Author" lastModified="2009-11-23T00:00:00">
+    <value>Author</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Comment" lastModified="2009-11-23T00:00:00">
+    <value>Comment</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CommentedItem" lastModified="2009-11-23T00:00:00">
+    <value>Commented Item</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreActions" lastModified="2010-07-26T00:00:00">
+    <value>More actions</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreActionsLink" lastModified="2010-07-21T00:00:00">
+    <value>More actions</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MarkAsFavourite" lastModified="2009-11-23T00:00:00">
+    <value>Mark as Favourite</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BlockIP" lastModified="2009-11-23T00:00:00">
+    <value>Block IP</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BlockEmail" lastModified="2009-11-23T00:00:00">
+    <value>Block Email</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Blocked" lastModified="2009-11-30T00:00:00">
+    <value>Blocked</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UnblockIP" lastModified="2009-11-30T00:00:00">
+    <value>Unblock IP</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UnblockEmail" lastModified="2009-11-30T00:00:00">
+    <value>Unblock Email</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FilterAndEdit" lastModified="2009-11-23T00:00:00">
+    <value>Filter and Edit</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllComments" lastModified="2009-11-23T00:00:00">
+    <value>All Comments</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Today" lastModified="2009-11-23T00:00:00">
+    <value>Today</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditAlso" lastModified="2010-07-26T00:00:00">
+    <value>Edit also</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ItemsInThisModule" lastModified="2009-11-23T00:00:00">
+    <value>Items in this Module</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PermissionsForThisModule" lastModified="2009-11-23T00:00:00">
+    <value>Permissions for This Module</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ReturnToAllCommentsFor" lastModified="2009-11-23T00:00:00">
+    <value>Return to All Comments for</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditAComment" lastModified="2009-11-23T00:00:00">
+    <value>Edit a Comment</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Preview" lastModified="2009-11-23T00:00:00">
+    <value>Preview</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Website" lastModified="2009-11-23T00:00:00">
+    <value>Website</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PostedOn" lastModified="2009-11-23T00:00:00">
+    <value>Posted on</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="IpAddress" lastModified="2009-11-23T00:00:00">
+    <value>IP Address</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Published" lastModified="2009-11-23T00:00:00">
+    <value>Published</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Hidden" lastModified="2009-11-23T00:00:00">
+    <value>Hidden</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DraftIsNotPublicallyVisibleOnTheWebsite" lastModified="2010-07-26T00:00:00">
+    <value>Draft is not publically visible on the website</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Comments" lastModified="2009-11-23T00:00:00">
+    <value>Comments</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Spam" lastModified="2009-11-23T00:00:00">
+    <value>Spam</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CharacterSingular" lastModified="2009-11-24T00:00:00">
+    <value>character</value>
+    <comment>Word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CharacterPlural" lastModified="2009-11-24T00:00:00">
+    <value>characters</value>
+    <comment>Word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PasswordLengthHint" lastModified="2010-09-22T00:00:00">
+    <value>At least &lt;strong&gt;{0} {1}&lt;/strong&gt;</value>
+    <comment>phrase: At least &lt;strong&gt;{0} {1}&lt;/strong</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PasswordAlphaNumCharactersHint" lastModified="2010-09-22T00:00:00">
+    <value>At least &lt;strong&gt;{0} non alphanumeric {1}&lt;/strong&gt;</value>
+    <comment>phrase: At least &lt;strong&gt;{0} non alphanumeric {1}&lt;/strong&gt;</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ThePasswordMustBeAtLeastLong" lastModified="2009-11-24T00:00:00">
+    <value>The password must be at least {0} {1} long</value>
+    <comment>The password must be at least "{0}" "{1}" long</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AndMustContainNoLessThanNonAlphanumeric" lastModified="2009-11-24T00:00:00">
+    <value>and must contain no less than {0} non alphanumeric {1}</value>
+    <comment>phrase: and must contain no less than "{0}" non alphanumeric "{1}"]</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Simple" lastModified="2009-11-24T00:00:00">
+    <value>Simple</value>
+    <comment>word: Simple</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoCreatedSections" lastModified="2009-11-25T00:00:00">
+    <value>No sections have been created yet.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoSectionSelected" lastModified="2009-11-25T00:00:00">
+    <value>&lt;em&gt;No section selected&lt;/em&gt;</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TitleToolTip" lastModified="2009-12-08T00:00:00">
+    <value>The page title that is displayed in the browser title bar.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DescriptionToolTip" lastModified="2009-12-08T00:00:00">
+    <value>This text describes the content of your page. Invisible to the readers, it can boost your rankings on some engines.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="KeywordsToolTip" lastModified="2009-12-08T00:00:00">
+    <value>Metadata keywords are used by browsers or search engines to find and categorize your page.</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="KeywordsExampleText" lastModified="2009-12-08T00:00:00">
+    <value>Separate keywords with spaces. &lt;strong&gt;Example:&lt;/strong&gt; music guitar song</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AboutTitle" lastModified="2009-12-08T00:00:00">
+    <value>About Title</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AboutDescription" lastModified="2009-12-08T00:00:00">
+    <value>About Description</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AboutKeywords" lastModified="2009-12-08T00:00:00">
+    <value>About Keywords</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditLabel" lastModified="2009-12-08T00:00:00">
+    <value>Edit label</value>
+    <comment>phrase: Edit label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Continue" lastModified="2009-12-09T00:00:00">
+    <value>OK, Continue</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ContinueCommand" lastModified="2010-11-05T00:00:00">
+    <value>Continue</value>
+    <comment>Label: Continue</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BeCareful" lastModified="2009-12-09T00:00:00">
+    <value>Caution!</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BackendPagesDefaultMsg" lastModified="2009-12-09T00:00:00">
+    <value>Backend Pages are pages forming this site backend interface (the system you are using now). &lt;br /&gt; You are able to create new backend pages, edit or delete existing ones. &lt;br/&gt; So, &lt;strong class='sfEmphazie'&gt;you can easily destroy the whole backend interface&lt;/strong&gt; if you don't have the expertise needed.</value>
+    <comment>The message which is displayed when the BackendPages page is accessed.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DontShowMe" lastModified="2009-12-09T00:00:00">
+    <value>Don't show me this message again</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Contains" lastModified="2009-12-09T00:00:00">
+    <value>Contains</value>
+    <comment>word: Contains</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Actions" lastModified="2009-12-12T00:00:00">
+    <value>Actions</value>
+    <comment>word: Actions</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoItemsEmpty" lastModified="2009-12-12T00:00:00">
+    <value>No items (empty)</value>
+    <comment>phrase: No items (empty)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreItem" lastModified="2009-12-12T00:00:00">
+    <value> more item</value>
+    <comment>used as in '1 more item'</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreItems" lastModified="2009-12-12T00:00:00">
+    <value> more items</value>
+    <comment>used as in '4 more items'</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Permissions" lastModified="2009-12-12T00:00:00">
+    <value>Permissions</value>
+    <comment>word: Permissions</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ForDevelopers" lastModified="2009-12-12T00:00:00">
+    <value>For developers</value>
+    <comment>phrase: For developers</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EditProperties" lastModified="2009-12-12T00:00:00">
+    <value>Edit properties</value>
+    <comment>phrase: Edit properties</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Duplicate" lastModified="2009-12-13T00:00:00">
+    <value>Duplicate</value>
+    <comment>word: Duplicate</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BulkOperations" lastModified="2009-12-14T00:00:00">
+    <value>Bulk operations</value>
+    <comment>phrase: Bulk operations</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TagsBulkEdit" lastModified="2009-01-11T00:00:00">
+    <value>Bulk edit &lt;span class='sfExtraInfo'&gt;(URLs and synonyms)&lt;/span&gt;</value>
+    <comment>phrase: Bulk edit</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AreYouSureYouWantToDeleteSelectedItems" lastModified="2009-12-14T00:00:00">
+    <value>Are you sure you want to delete selected items?</value>
+    <comment>Confirmation message for bulk delete.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateNewItem" lastModified="2009-12-17T00:00:00">
+    <value>Create new item</value>
+    <comment>phrase: Create new item</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SaveItem" lastModified="2009-12-17T00:00:00">
+    <value>Save item</value>
+    <comment>phrase: Save item</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SaveAndAddAnotherItem" lastModified="2009-12-17T00:00:00">
+    <value>Save and add another item</value>
+    <comment>phrase: Save and add another item</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UseSelected" lastModified="2009-12-17T00:00:00">
+    <value>Use Selected</value>
+    <comment>phrase: Use Selected</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ViewAppMaster" lastModified="2009-12-17T00:00:00">
+    <value>View only App_Master folder</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllFolders" lastModified="2009-12-17T00:00:00">
+    <value>All Folders</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateTemplFromMasterPage" lastModified="2009-12-17T00:00:00">
+    <value>Create a template from selected master page</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BrowseOtherFolders" lastModified="2009-12-19T00:00:00">
+    <value>Browse other folders</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AppMasterFolder" lastModified="2009-12-19T00:00:00">
+    <value>Folder: &lt;strong&gt;App_Master&lt;/strong&gt;</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="History" lastModified="2009-12-20T00:00:00">
+    <value>History</value>
+    <comment>word: history</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Unpublish" lastModified="2009-12-21T00:00:00">
+    <value>Unpublish</value>
+    <comment>word: Unpublish</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SetPermissions" lastModified="2009-12-21T00:00:00">
+    <value>Set permissions</value>
+    <comment>phrase: Set permissions</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SetPermissionsForItem" lastModified="2010-01-14T00:00:00">
+    <value>Set &lt;strong&gt;permissions&lt;/strong&gt; for {0}.</value>
+    <comment>phrase: Set permissions for {0}.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ReviewHistory" lastModified="2009-12-21T00:00:00">
+    <value>Review history</value>
+    <comment>phrase: Review history</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoMasterFiles" lastModified="2009-12-22T00:00:00">
+    <value>No master files have been uploaded to &lt;em&gt;App_Master&lt;/em&gt; folder yet</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HowToUpload" lastModified="2009-12-22T00:00:00">
+    <value>How to upload</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UrlName" lastModified="2010-01-05T00:00:00">
+    <value>URL</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AppliedTo" lastModified="2010-01-05T00:00:00">
+    <value>Applied to</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Move" lastModified="2010-01-07T00:00:00">
+    <value>Move</value>
+    <comment>word: Move</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoveEllipsis" lastModified="2010-01-07T00:00:00">
+    <value>Move...</value>
+    <comment>word: Move...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Up" lastModified="2010-01-07T00:00:00">
+    <value>Up</value>
+    <comment>word: Up (direction)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Down" lastModified="2010-01-07T00:00:00">
+    <value>Down</value>
+    <comment>word: Down (direction)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoItemsHaveBeenCreatedYet" lastModified="2010-08-02T00:00:00">
+    <value>No {0} have been created yet</value>
+    <comment>phrase: No {0} have been created yet</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateYourFirstItem" lastModified="2010-08-02T00:00:00">
+    <value>Create a {0}</value>
+    <comment>phrase: Create a {0}</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Items" lastModified="2010-01-15T00:00:00">
+    <value>items</value>
+    <comment>word: items</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChangeParentOfSelectedItems" lastModified="2010-01-16T00:00:00">
+    <value>Change parent &lt;strong&gt;of {0} selected items&lt;/strong&gt;</value>
+    <comment>phrase: Change parent of {0} selected items.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DoneWithSelecting" lastModified="2010-08-02T00:00:00">
+    <value>Done selecting</value>
+    <comment>phrase: Done selecting</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoveUp" lastModified="2010-01-27T00:00:00">
+    <value>Move up</value>
+    <comment>phrase: Move up (Listbox button)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoveDown" lastModified="2010-01-27T00:00:00">
+    <value>Move down</value>
+    <comment>phrase: Move down (Listbox button)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ItemsAreAboutToBeDeleted" lastModified="2010-01-27T00:00:00">
+    <value>{0} items are about to be deleted. Do you want to continue?</value>
+    <comment>phrase:{0} items are about to be deleted. Do you want to continue?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AreYouSureYouWantToDeleteItem" lastModified="2010-02-08T00:00:00">
+    <value>Are you sure you want to delete this item?</value>
+    <comment>Confirmation message for single item deleting.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectFromExisting" lastModified="2010-02-25T00:00:00">
+    <value>Select from existing</value>
+    <comment>phrase: Select from existing</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseExisting" lastModified="2010-02-26T00:00:00">
+    <value>Close existing</value>
+    <comment>phrase: Close existing</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowAll" lastModified="2010-02-25T00:00:00">
+    <value>Show all</value>
+    <comment>phrase: Show all</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Draft" lastModified="2010-02-26T00:00:00">
+    <value>Draft</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Drafts" lastModified="2010-02-26T00:00:00">
+    <value>Drafts</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Schedule" lastModified="2010-04-26T00:00:00">
+    <value>Schedule</value>
+    <comment>word: Schedule</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Scheduled" lastModified="2010-02-26T00:00:00">
+    <value>Scheduled</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ScheduledDotDotDot" lastModified="2010-02-26T00:00:00">
+    <value>Scheduled...</value>
+    <comment>word</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Thumbnail" lastModified="2010-10-08T00:00:00">
+    <value>Thumbnail</value>
+    <comment>phrase: Thumbnail</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClickToSelect" lastModified="2010-03-04T00:00:00">
+    <value>Click to select</value>
+    <comment>phrase: Click to select</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowOnlyMostPopular" lastModified="2010-03-04T00:00:00">
+    <value>Show only most popular</value>
+    <comment>phrase: Show only most popular</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MostPopular" lastModified="2010-03-04T00:00:00">
+    <value>Most popular</value>
+    <comment>phrase: Most popular</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="StartTypingAndItemsWillBeHinted" lastModified="2010-03-04T00:00:00">
+    <value>Start typing and {0} will be hinted.</value>
+    <comment>phrase: Start typing and {0} will be hinted.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OpeningExisting" lastModified="2010-03-04T00:00:00">
+    <value>Opening existing...</value>
+    <comment>phrase: Opening existing...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OpeningAll" lastModified="2010-03-04T00:00:00">
+    <value>Opening all...</value>
+    <comment>phrase: Opening all...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoParent" lastModified="2010-01-16T00:00:00">
+    <value>-- no parent --</value>
+    <comment>phrase: -- no parent --</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RunningSince" lastModified="2010-02-08T00:00:00">
+    <value>Running since</value>
+    <comment>The label for 'Running Since' system information screen.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SavingImgAlt" lastModified="2010-02-08T00:00:00">
+    <value>Saving ...</value>
+    <comment>Alternative text for loading/saving image in create/edit item form</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserLimitReached" lastModified="2010-03-12T00:00:00">
+    <value>Maximum allowed users limit was reached.</value>
+    <comment>Licensed user limit was reached.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserNotFound" lastModified="2010-03-12T00:00:00">
+    <value>User Not Found</value>
+    <comment>User not found in any provider.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserAlreadyLoggedIn" lastModified="2010-03-12T00:00:00">
+    <value>User Already Logged In</value>
+    <comment>User already logged in.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserRevoked" lastModified="2010-03-23T00:00:00">
+    <value>Either your user was deleted or user rights to access or modify the site was changed.</value>
+    <comment>User revoked</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserLoggedFromDifferentIp" lastModified="2010-03-12T00:00:00">
+    <value>User is logged in from different IP address</value>
+    <comment>User already logged from different IP address.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SessionExpired" lastModified="2010-03-12T00:00:00">
+    <value>Server Session Expired</value>
+    <comment>Your server session has expired.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserLoggedOff" lastModified="2010-03-12T00:00:00">
+    <value>User already logged off</value>
+    <comment>Server session expired.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserLoggedFromDifferentComputer" lastModified="2010-03-12T00:00:00">
+    <value>User already logged on a different computer</value>
+    <comment>User already logged on a different computer</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UnknownReason" lastModified="2010-03-12T00:00:00">
+    <value>You are logged off. Contact the systema dministrator.</value>
+    <comment>Uknown reason for deny login or logoff</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NeedAdminRights" lastModified="2010-03-12T00:00:00">
+    <value>You need administrative rights to logout users</value>
+    <comment>Need administrative rights to logout users</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelfLogoffLabel" lastModified="2010-03-12T00:00:00">
+    <value>Someone is &lt;strong&gt;already using&lt;/strong&gt; this username and password from another computer or browser. &lt;br /&gt;To proceed, you need to &lt;strong&gt;log him/her off&lt;/strong&gt;.</value>
+    <comment>You already logged in on a different computer or browser.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DenyLogonMesage" lastModified="2010-03-12T00:00:00">
+    <value>Sorry, you cannot log in because the maximum user quota has been reached.</value>
+    <comment>Denied log in</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LoginRetryMessage" lastModified="2010-03-12T00:00:00">
+    <value>You can wait for a user to log off and try to login again later.</value>
+    <comment>Login Retry Message</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserNotSelected" lastModified="2010-03-12T00:00:00">
+    <value>Please, select a user to log out.</value>
+    <comment>User Not Selected Message</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LogoutUserConfirm" lastModified="2010-03-12T00:00:00">
+    <value>The selected user will be logged out and you will be logged in, continue?</value>
+    <comment>Logout User Confirm</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelfLogoutUserConfirm" lastModified="2010-03-12T00:00:00">
+    <value>The other user will be logged off from the system. Are you sure you want to continue? </value>
+    <comment>Self Logout User Confirm</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserLimitLabel" lastModified="2010-03-12T00:00:00">
+    <value>Maximum simultanious users allowed limit is reached.</value>
+    <comment>User Limit Label</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LogoutButtonText" lastModified="2010-03-12T00:00:00">
+    <value>Force logout of the selected user and login me.</value>
+    <comment>Logout Button Text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelftLogoutButtonText" lastModified="2010-03-12T00:00:00">
+    <value>Log the other user off and enter</value>
+    <comment>Self Logout Button Text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FilterLoggedInUsersText" lastModified="2010-03-12T00:00:00">
+    <value>Online backend users</value>
+    <comment>Message shown in users page.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserOnline" lastModified="2010-03-18T00:00:00">
+    <value>Online</value>
+    <comment>Message shown in users page.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UserOffline" lastModified="2010-03-18T00:00:00">
+    <value>Offline</value>
+    <comment>Message shown in users page.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Upload" lastModified="2010-03-18T00:00:00">
+    <value>Upload</value>
+    <comment>word: Upload</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MultipleCanBeUploadedAtATime" lastModified="2010-09-30T00:00:00">
+    <value>Multiple {0} can be uploaded at a time.</value>
+    <comment>word: Multiple {0} can be uploaded at a time.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="StatusPage" lastModified="2010-09-30T00:00:00">
+    <value>Status / Page</value>
+    <comment>word: Status / Page</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OnlyOneCanBeUploadedAtATime" lastModified="2010-09-30T00:00:00">
+    <value>Only one {0} can be uploaded at a time.</value>
+    <comment>word: Only one {0} can be uploaded at a time.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CreateANewItem" lastModified="2010-03-25T00:00:00">
+    <value>Create a new {0}.</value>
+    <comment>phrase: Create a new {0}.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ForceLogoutUserConfirmation" lastModified="2010-03-18T00:00:00">
+    <value>You are about to force logout {0}, continue ?</value>
+    <comment>Message shown in users edit screen to confirm user log-off.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ForceLogout" lastModified="2010-10-11T00:00:00">
+    <value>Force logout</value>
+    <comment>Message shown in users edit screen as the text of a button that logs out a user.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeHorizontalSimple" lastModified="2010-04-16T00:00:00">
+    <value>Horizontal</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeHorizontalDropDownMenu" lastModified="2010-04-16T00:00:00">
+    <value>Horizontal with drop down menus</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeHorizontalTabs" lastModified="2010-04-16T00:00:00">
+    <value>Horizontal with tabs</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeVerticalSimple" lastModified="2010-04-16T00:00:00">
+    <value>Vertical</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeVerticalTree" lastModified="2010-04-16T00:00:00">
+    <value>Tree (vertical with sub-levels)</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeSiteMapInRows" lastModified="2010-04-16T00:00:00">
+    <value>Sitemap divided in rows</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeSiteMapInColumns" lastModified="2010-04-16T00:00:00">
+    <value>Sitemap divided in columns</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeCustomNavigation" lastModified="2010-04-16T00:00:00">
+    <value>Custom Navigation</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationModeHeading" lastModified="2010-04-16T00:00:00">
+    <value>What type of navigation to use?</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSettingsHeading" lastModified="2010-04-16T00:00:00">
+    <value>Fine tune the selected type</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeading" lastModified="2010-04-16T00:00:00">
+    <value>Links to which pages to display?</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingHorizontalSimple" lastModified="2010-04-20T00:00:00">
+    <value>Links to which pages to display?|</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingHorizontalDropDownMenu" lastModified="2010-04-20T00:00:00">
+    <value>In the top bar: Links to which pages to display?|Their child pages will be in the drop down menus</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingHorizontalTabs" lastModified="2010-04-20T00:00:00">
+    <value>In the top bar: Links to which pages to display?|Their child pages will be in a strip bellow</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingVerticalSimple" lastModified="2010-04-20T00:00:00">
+    <value>Links to which pages to display?|</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingVerticalTree" lastModified="2010-04-20T00:00:00">
+    <value>Initially: Links to which pages to display?|Their child pages will be expanded</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TheirChildPagesWillBeExpanded" lastModified="2010-10-18T00:00:00">
+    <value>Their child pages will be expanded</value>
+    <comment>phrase: Their child pages will be expanded</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoPageIsSelected" lastModified="2010-10-18T00:00:00">
+    <value>No page is selected</value>
+    <comment>phrase: No page is selected</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoPagesAreSelected" lastModified="2010-10-18T00:00:00">
+    <value>No pages are selected</value>
+    <comment>phrase: No pages are selected</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HowManyLevelsToExpandInitially" lastModified="2010-10-18T00:00:00">
+    <value>How many levels to expand initially</value>
+    <comment>phrase: How many levels to expand initially</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllExistingLevels" lastModified="2010-10-18T00:00:00">
+    <value>All existing levels</value>
+    <comment>phrase: All existing levels</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NumberOfLevelsLowercase" lastModified="2010-10-18T00:00:00">
+    <value>level(s)</value>
+    <comment>phrase: level(s)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowAllLevelsExpandedInitially" lastModified="2010-10-18T00:00:00">
+    <value>Show all levels expanded initially</value>
+    <comment>phrase: Show all levels expanded initially</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllowCollapsing" lastModified="2010-10-18T00:00:00">
+    <value>Allow collapsing</value>
+    <comment>phrase: Allow collapsing</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OpenDropdownMenuOn" lastModified="2010-10-18T00:00:00">
+    <value>Open drop down menu on</value>
+    <comment>phrase: Open drop down menu on</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MouseOver" lastModified="2010-10-18T00:00:00">
+    <value>Mouse over</value>
+    <comment>phrase: Mouse over</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Click" lastModified="2010-10-18T00:00:00">
+    <value>Click</value>
+    <comment>word: Click</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HeadingsShouldBeLinks" lastModified="2010-10-18T00:00:00">
+    <value>Headings should be links</value>
+    <comment>phrase: Headings should be links</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DesignSettings" lastModified="2010-10-18T00:00:00">
+    <value>Design settings</value>
+    <comment>phrase: Design settings</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WrapperClassTemplate" lastModified="2010-10-18T00:00:00">
+    <value>Wrapper CSS class &lt;em class='sfNote'&gt;(Skin)&lt;/em&gt;</value>
+    <comment>phrase: Wrapper CSS class &lt;em class='sfNote'&gt;(Skin)&lt;/em&gt;</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomTemplatePath" lastModified="2010-10-18T00:00:00">
+    <value>Custom template path</value>
+    <comment>phrase: Custom template path</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomTemplatePathExample" lastModified="2010-10-18T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt; ~/YourFolder/Navigation.ascx</value>
+    <comment>phrase: &lt;strong&gt;Example:&lt;/strong&gt; ~/YourFolder/Navigation.ascx</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingSiteMapInColumns" lastModified="2010-04-20T00:00:00">
+    <value>Links to which pages to display as column headings?|Their child pages will be listed bellow them</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingSiteMapInRows" lastModified="2010-04-20T00:00:00">
+    <value>Links to which pages to display as row headdings?|Their child pages will be listed bellow them</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionHeadingCustomNavigation" lastModified="2010-04-20T00:00:00">
+    <value>Links to which pages to display?|</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionTopLevelPages" lastModified="2010-08-19T00:00:00">
+    <value>Top level pages</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionSelectedPageChildren" lastModified="2010-04-16T00:00:00">
+    <value>All pages under particular page</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionCurrentPageChildren" lastModified="2010-04-16T00:00:00">
+    <value>All pages under currently opened page</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionCurrentPageSiblings" lastModified="2010-04-16T00:00:00">
+    <value>All sibling pages of currently opened page</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationSelectionCustomSelection" lastModified="2010-04-16T00:00:00">
+    <value>Custom selection of pages</value>
+    <comment>Label shown in navigation control desginer modes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NavigationDesignerTitle" lastModified="2010-04-16T00:00:00">
+    <value>Navigation</value>
+    <comment>Title shown in navigation control desginer</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllPagesUnderParticularParentPage" lastModified="2010-10-06T00:00:00">
+    <value>All pages under particular parent page...</value>
+    <comment>Phrase: All pages under particular parent page...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllPagesUnder" lastModified="2010-10-06T00:00:00">
+    <value>All pages under </value>
+    <comment>Phrase: All pages under </comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomSelectionOfPages" lastModified="2010-10-06T00:00:00">
+    <value>Custom selection of pages...</value>
+    <comment>Phrase: Custom selection of pages...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BulkEdit" lastModified="2010-04-26T00:00:00">
+    <value>Bulk edit</value>
+    <comment>phrase: Bulk edit</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Owner" lastModified="2010-04-26T00:00:00">
+    <value>Owner</value>
+    <comment>word: Owner</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ManageAlso" lastModified="2010-04-27T00:00:00">
+    <value>Manage also</value>
+    <comment>phrase: Manage also</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomFields" lastModified="2010-04-27T00:00:00">
+    <value>Custom fields</value>
+    <comment>phrase: Custom fields</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Content" lastModified="2010-04-27T00:00:00">
+    <value>Content</value>
+    <comment>word: Content</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RevisionHistory" lastModified="2010-04-27T00:00:00">
+    <value>Revision History</value>
+    <comment>phrase: Revision History</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Under" lastModified="2010-04-30T00:00:00">
+    <value>Under</value>
+    <comment>word: Under</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RemoveThisRule" lastModified="2010-04-30T00:00:00">
+    <value>Remove this rule</value>
+    <comment>phrase: RemoveThisRule</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddAnotherSortingRule" lastModified="2010-04-30T00:00:00">
+    <value>Add another sorting rule</value>
+    <comment>phrase: AddAnotherSortingRule</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ThenBy" lastModified="2010-04-30T00:00:00">
+    <value>Then by</value>
+    <comment>phrase: ThenBy</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RemoveAllRules" lastModified="2010-04-30T00:00:00">
+    <value>Remove all</value>
+    <comment>phrase: RemoveAllRules</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Remove" lastModified="2010-04-30T00:00:00">
+    <value>Remove</value>
+    <comment>word: Remove</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DoneSelecting" lastModified="2010-05-11T00:00:00">
+    <value>Done selecting</value>
+    <comment>phrase: Done selecting</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CSS" lastModified="2010-05-12T00:00:00">
+    <value>CSS</value>
+    <comment>word: CSS</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Feed" lastModified="2010-07-21T00:00:00">
+    <value>Feed</value>
+    <comment>word: Feed</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SearchBox" lastModified="2010-12-10T00:00:00">
+    <value>Search Box</value>
+    <comment>word: Search Box</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SearchResults" lastModified="2010-12-10T00:00:00">
+    <value>Search Results</value>
+    <comment>word: Search Results</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Media" lastModified="2010-05-12T00:00:00">
+    <value>Media</value>
+    <comment>word: Media</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="JavaScript" lastModified="2010-05-13T00:00:00">
+    <value>Java Script</value>
+    <comment>phrase: Java Script</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="GoogleAnalytics" lastModified="2010-05-13T00:00:00">
+    <value>Google Analytics</value>
+    <comment>phrase: Google Analytics</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="File" lastModified="2010-05-29T00:00:00">
+    <value>File</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Paging_First" lastModified="2010-05-31T00:00:00">
+    <value>First</value>
+    <comment>Text of the link to the first page in the paging control</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Paging_Prev" lastModified="2010-05-31T00:00:00">
+    <value>Prev</value>
+    <comment>Text of the link to the previous page in the paging control</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Paging_Next" lastModified="2010-05-31T00:00:00">
+    <value>Next</value>
+    <comment>Text of the link to the next page in the paging control</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Paging_Last" lastModified="2010-05-31T00:00:00">
+    <value>Last</value>
+    <comment>Text of the link to the last page in the paging control</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Size" lastModified="2010-05-29T00:00:00">
+    <value>Size</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UploadedOn" lastModified="2010-05-29T00:00:00">
+    <value>Uploaded on</value>
+    <comment>word: Uploaded on</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Download" lastModified="2010-06-01T00:00:00">
+    <value>Download</value>
+    <comment>word: Download</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CopyAsNewest" lastModified="2010-06-03T00:00:00">
+    <value>Revert to this version</value>
+    <comment>Copy this version as a base of the news item</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="note" lastModified="2010-06-14T00:00:00">
+    <value>note</value>
+    <comment>note</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BasicToolsOnly" lastModified="2010-06-02T00:00:00">
+    <value>Basic options only</value>
+    <comment>phrase: Basic options only</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreFormattingTools" lastModified="2010-06-02T00:00:00">
+    <value>More formatting options</value>
+    <comment>phrase: More formatting options</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FormattingOptions" lastModified="2010-11-14T00:00:00">
+    <value>Formatting options</value>
+    <comment>phrase: Formatting options</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HideFormattingOptions" lastModified="2010-11-14T00:00:00">
+    <value>Hide formatting options</value>
+    <comment>phrase: Hide formatting options</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RemoveThisCategory" lastModified="2010-06-09T00:00:00">
+    <value>Remove this category</value>
+    <comment>phrase: Remove this category</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RemoveThisTag" lastModified="2010-06-09T00:00:00">
+    <value>Remove this tag</value>
+    <comment>phrase: Remove this tag</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NotAvailable" lastModified="2010-06-09T00:00:00">
+    <value>&lt;span class='sfNote'&gt;(N/A)&lt;/span&gt;</value>
+    <comment>phrase: (N/A)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Previous" lastModified="2010-06-22T00:00:00">
+    <value>Previous</value>
+    <comment>phrase: (N/A)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Next" lastModified="2010-06-22T00:00:00">
+    <value>Next</value>
+    <comment>phrase: (N/A)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PreviousVersion" lastModified="2010-06-29T00:00:00">
+    <value>Older version</value>
+    <comment>phrase: Older version</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NextVersion" lastModified="2010-06-29T00:00:00">
+    <value>Newer version</value>
+    <comment>phrase: Newer version</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseCategories" lastModified="2010-07-22T00:00:00">
+    <value>Close categories</value>
+    <comment>phrase: Close categories</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseTags" lastModified="2010-06-02T00:00:00">
+    <value>Close tags</value>
+    <comment>The link for closing the tag filter widget in the sidebar.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowMoreTags" lastModified="2010-05-18T00:00:00">
+    <value>{0} more tags</value>
+    <comment>phrase: {0} more tags</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowLessTags" lastModified="2010-05-18T00:00:00">
+    <value>{0} less tags</value>
+    <comment>phrase: {0} less tags</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MoreOptions" lastModified="2010-07-29T00:00:00">
+    <value>More options</value>
+    <comment>phrase</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TextToDisplay" lastModified="2010-07-29T00:00:00">
+    <value>Text to display</value>
+    <comment>phrase: Text to display</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Tooltip" lastModified="2010-07-29T00:00:00">
+    <value>Tooltip &lt;span class='sfLblNote'&gt;(appears when the cursor is pointed to the link)&lt;/span&gt;</value>
+    <comment>phrase: Tooltip (appears when the cursor is pointed to the link)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WebAddress" lastModified="2010-07-29T00:00:00">
+    <value>Web address</value>
+    <comment>phrase: Web address</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CssClass" lastModified="2010-07-29T00:00:00">
+    <value>CSS class</value>
+    <comment>phrase: CSS class</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OpenInNewWindow" lastModified="2010-07-29T00:00:00">
+    <value>Open this link in a new window</value>
+    <comment>phrase: Open this link in a new window</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OpenInNewWindowDescription" lastModified="2010-07-29T00:00:00">
+    <value>&lt;strong&gt;Caution:&lt;/strong&gt; Opening a new window is in conflict with web standards</value>
+    <comment>phrase: Caution: Opening a new window is in conflict with web standards</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowByTyping" lastModified="2010-07-29T00:00:00">
+    <value>Narrow by typing</value>
+    <comment>phrase: Narrow by typing</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectPage" lastModified="2010-07-29T00:00:00">
+    <value>Select a page</value>
+    <comment>phrase: Select a page</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ClearFilter" lastModified="2010-07-31T00:00:00">
+    <value>Clear filter</value>
+    <comment>'Clear filter' button text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="InProcessOfImplementation" lastModified="2010-07-31T00:00:00">
+    <value>&lt;span class='sfNote'&gt;(In process of implementation.)&lt;/span&gt;</value>
+    <comment>'In process of implementation.' text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="InProcessOfImplementationNoHtml" lastModified="2010-07-31T00:00:00">
+    <value>In process of implementation.</value>
+    <comment>'In process of implementation.' text with no html</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WebAddressExample" lastModified="2010-08-05T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt; http://weather.com</value>
+    <comment>phrase: Example: http://weather.com</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WebAddressTextToDisplayExample" lastModified="2010-08-05T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt; Weather forecast</value>
+    <comment>phrase: Example: Weather forecast</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PageFromThisSite" lastModified="2010-08-10T00:00:00">
+    <value>Page from this site</value>
+    <comment>phrase: Page from this site</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EmailAddressExample" lastModified="2010-08-10T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt; johnsmith@gmail.com</value>
+    <comment>phrase: Example: johnsmith@gmail.com</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EmailAddress" lastModified="2010-08-10T00:00:00">
+    <value>Email address</value>
+    <comment>phrase: Email address</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="EmailTextToDisplayExample" lastModified="2010-08-10T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt; Send email to John</value>
+    <comment>phrase: Example: Send email to John</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="InsertLink" lastModified="2010-08-11T00:00:00">
+    <value>Insert a link</value>
+    <comment>phrase: Insert a link</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LinkTo" lastModified="2010-08-11T00:00:00">
+    <value>LinkTo</value>
+    <comment>phrase: Insert a link</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FromOtherSites" lastModified="2010-08-17T00:00:00">
+    <value>From other sites</value>
+    <comment>phrase: From other sites</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FromThisSite" lastModified="2010-08-17T00:00:00">
+    <value>From this site</value>
+    <comment>phrase: From this site</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectPages" lastModified="2010-08-17T00:00:00">
+    <value>Select Pages</value>
+    <comment>phrase: Select Pages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectPagesLowerCase" lastModified="2010-10-06T00:00:00">
+    <value>Select pages</value>
+    <comment>phrase: Select pages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectPagesWithDots" lastModified="2010-10-06T00:00:00">
+    <value>Select pages...</value>
+    <comment>phrase: Select pages...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectParentWithDots" lastModified="2010-10-06T00:00:00">
+    <value>Select parent...</value>
+    <comment>phrase: Select parent...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddOtherPagesWithDots" lastModified="2010-10-06T00:00:00">
+    <value>Add other pages...</value>
+    <comment>phrase: Add other pages...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PageName" lastModified="2010-08-20T00:00:00">
+    <value>Name</value>
+    <comment>label: Name. Used in the dialog for selecting external pages.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PleaseSpecifyValidPages" lastModified="2010-08-20T00:00:00">
+    <value>Please specify valid name and URL for all external pages.</value>
+    <comment>Message: Please specify valid name and URL for all external pages.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last1Day" lastModified="2010-08-31T00:00:00">
+    <value>Last 1 day</value>
+    <comment>phrase: Last 1 day</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last3Days" lastModified="2010-08-31T00:00:00">
+    <value>Last 3 days</value>
+    <comment>phrase: Last 3 days</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last1Week" lastModified="2010-08-31T00:00:00">
+    <value>Last 1 week</value>
+    <comment>phrase: Last 1 week</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last1Month" lastModified="2010-08-31T00:00:00">
+    <value>Last 1 month</value>
+    <comment>phrase: Last 1 month</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last6Months" lastModified="2010-08-31T00:00:00">
+    <value>Last 6 months</value>
+    <comment>phrase: Last 6 months</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last1Year" lastModified="2010-08-31T00:00:00">
+    <value>Last 1 year</value>
+    <comment>phrase: Last 1 year</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last2Years" lastModified="2010-08-31T00:00:00">
+    <value>Last 2 years</value>
+    <comment>phrase: Last 2 years</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Last5Years" lastModified="2010-08-31T00:00:00">
+    <value>Last 5 years</value>
+    <comment>phrase: Last 5 years</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DisplayNewsPublishedIn" lastModified="2010-08-31T00:00:00">
+    <value>Display news published in...</value>
+    <comment>phrase: Display news published in...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectDates" lastModified="2010-08-31T00:00:00">
+    <value>Select Dates</value>
+    <comment>phrase: Select Dates</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="From" lastModified="2010-08-31T00:00:00">
+    <value>From</value>
+    <comment>word: From</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Unlock" lastModified="2010-08-30T00:00:00">
+    <value>Unlock</value>
+    <comment>Label: Unlock</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ViewReadOnly" lastModified="2010-08-30T00:00:00">
+    <value>View as read-only</value>
+    <comment>Label: ViewReadOnly</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ExportLanguagePack" lastModified="2010-08-20T00:00:00">
+    <value>Export language pack</value>
+    <comment>phrase: Export language pack</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ImportLanguagePack" lastModified="2010-08-20T00:00:00">
+    <value>Import language pack</value>
+    <comment>phrase : Import language pack</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectLanguageToImportFrom" lastModified="2010-10-18T00:00:00">
+    <value>Select a language &lt;span class='sfLblNote'&gt;for which you will import labels&lt;/span&gt;</value>
+    <comment>phrase : Select a language &lt;span class='sfLblNote'&gt;for which you will import labels&lt;/span&gt;</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectXLSXFile" lastModified="2010-10-18T00:00:00">
+    <value>Select a .XLSX file &lt;span class='sfLblNote'&gt;with the translated labels for the selected language&lt;/span&gt;</value>
+    <comment>phrase : Select a .XLSX file &lt;span class='sfLblNote'&gt;with the translated labels for the selected language&lt;/span&gt;</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Import" lastModified="2010-08-20T00:00:00">
+    <value>Import</value>
+    <comment>phrase : Import language pack</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TranslateAllMissingLabelsGoogle" lastModified="2010-08-20T00:00:00">
+    <value>Translate all missing labels (using Google Translator)</value>
+    <comment>phrase: Translate all missing labels (using Google Translator)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DisplayPostsPublishedIn" lastModified="2010-09-08T00:00:00">
+    <value>Display posts published in...</value>
+    <comment>phrase: Display posts published in...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DisplayEvetnsPublishedIn" lastModified="2010-09-08T00:00:00">
+    <value>Display evetns published in...</value>
+    <comment>phrase: Display evetns published in...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="RegistrationDate" lastModified="2010-09-15T00:00:00">
+    <value>Registration date</value>
+    <comment>phrase: Registration date</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastLogin" lastModified="2010-09-15T00:00:00">
+    <value>Last login</value>
+    <comment>phrase: Last login</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LastActivity" lastModified="2010-09-15T00:00:00">
+    <value>Last activity</value>
+    <comment>phrase: Last activity</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PublishedStatusDescription" lastModified="2010-10-01T00:00:00">
+    <value>Everyone can view this post on the website</value>
+    <comment>phrase: Everyone can view this post on the website</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ScheduledStatusDescription" lastModified="2010-10-01T00:00:00">
+    <value>This post will be automatically published on the website.</value>
+    <comment>phrase: This post will be automatically published on the website.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectRolesOrUsers" lastModified="2010-10-01T00:00:00">
+    <value>Select roles or users</value>
+    <comment>phrase: Select roles or users</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TemplateChangeWarning" lastModified="2010-09-30T00:00:00">
+    <value>&lt;strong&gt;Warning:&lt;/strong&gt; changing the template might break the layout of the page.</value>
+    <comment>Message: Warning: changing the template might break the layout of the page.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AcceptChanges" lastModified="2010-10-01T00:00:00">
+    <value>Accept changes</value>
+    <comment>phrase: Accept changes</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TranslationsAreSynchronized" lastModified="2010-10-06T00:00:00">
+    <value>&lt;strong&gt;All translations are synced.&lt;/strong&gt; &lt;span class='sfNote'&gt;Adding/deleting widgets will affect all translations&lt;/span&gt;.</value>
+    <comment>Message: All translations are synced. ...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="StopSyncing" lastModified="2010-10-06T00:00:00">
+    <value>Stop syncing</value>
+    <comment>Label: Stop syncing</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowOtherTranslations" lastModified="2010-10-06T00:00:00">
+    <value>Show other translations</value>
+    <comment>Label: Show other translations</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HideOtherTranslations" lastModified="2010-11-16T00:00:00">
+    <value>Hide other translations</value>
+    <comment>Label: Hide other translations</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CompareTranslations" lastModified="2010-10-21T00:00:00">
+    <value>Compare translations</value>
+    <comment>Label: Compare translations</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseComparisson" lastModified="2010-11-09T00:00:00">
+    <value>Close comparisson</value>
+    <comment>Label: Close comparisson</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OtherLanguageVersions" lastModified="2010-10-06T00:00:00">
+    <value>Other language versions:</value>
+    <comment>Label: Other language versions:</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CopyOtherLanguage" lastModified="2010-10-11T00:00:00">
+    <value>Copy from another language</value>
+    <comment>Button: Copy from another language</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="StartFromScratch" lastModified="2010-10-11T00:00:00">
+    <value>Start from scratch</value>
+    <comment>Button: Start from scratch</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TitleCopyOtherLanguage" lastModified="2010-10-11T00:00:00">
+    <value>Copy content from another language</value>
+    <comment>Title: Copy content from another language</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectSourceVersion" lastModified="2010-10-11T00:00:00">
+    <value>Select a language to copy from</value>
+    <comment>Label: Select a language to copy from</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoneStartFromScratch" lastModified="2010-10-11T00:00:00">
+    <value>None (start from scratch)</value>
+    <comment>Label: None (start from scratch)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="KeepPagesSynced" lastModified="2010-10-11T00:00:00">
+    <value>Keep all language versions synced as one page</value>
+    <comment>Label: Keep all language versions synced as a one page</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="KeepPagesSyncedDescr" lastModified="2010-10-11T00:00:00">
+    <value>If a widget is added to (or deleted from) a language version it will be added to (or deleted from) all language versions. The same widget will automatically display content in different languages according to selection of the user.</value>
+    <comment>Label: Description for 'Keep all language versions synced' checkbox</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="StopSyncWarningMessage" lastModified="2010-10-13T00:00:00">
+    <value>Are you sure you want to stop syncing translations of this page?&lt;br /&gt;There is no undo. &lt;strong class='sfImportantWarning'&gt;Stopping synchronization is permanent for this page&lt;/strong&gt;</value>
+    <comment>Message: Stop page synchronization: This action is NOT undoable! Are you sure?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Warning" lastModified="2010-10-13T00:00:00">
+    <value>Warning</value>
+    <comment>Title: Warning</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Ok" lastModified="2010-10-13T00:00:00">
+    <value>OK</value>
+    <comment>Label: Ok</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowSelection" lastModified="2010-09-06T00:00:00">
+    <value>Narrow selection</value>
+    <comment>phrase: Narrow selection</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowSelectionComplementoryText" lastModified="2010-09-06T00:00:00">
+    <value>Narrow selection &lt;span class='sfNote'&gt;(by category, tag, author, date)&lt;/span&gt;</value>
+    <comment>Narrow selection complementory text</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedItemWasDeletedSelectAnotherItem" lastModified="2010-09-08T00:00:00">
+    <value>The selected item was deleted. Please select another item.</value>
+    <comment>phrase: The selected item was deleted. Please select another item.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedItemWasDeleted" lastModified="2010-09-08T00:00:00">
+    <value>The selected item was deleted</value>
+    <comment>phrase: The selected item was deleted</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowByTypingTitleOrAuthorOrDate" lastModified="2010-09-08T00:00:00">
+    <value>Narrow by typing title or author or date</value>
+    <comment>phrase: Narrow by typing title or author or date</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowByTypingTitleOrDate" lastModified="2010-09-08T00:00:00">
+    <value>Narrow by typing title or date</value>
+    <comment>phrase: Narrow by typing title or date</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoContentSelected" lastModified="2010-09-08T00:00:00">
+    <value>No content selected</value>
+    <comment>phrase: No content selected</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AdvancedSelection" lastModified="2010-09-08T00:00:00">
+    <value>Advanced selection</value>
+    <comment>phrase: Advanced selection</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChooseNews" lastModified="2010-09-08T00:00:00">
+    <value>Choose News</value>
+    <comment>phrase: Choose News</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllPublishedNews" lastModified="2010-09-08T00:00:00">
+    <value>All published news</value>
+    <comment>phrase: All published news</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OneParticularNewsOnly" lastModified="2010-09-08T00:00:00">
+    <value>One particular news item only...</value>
+    <comment>phrase: One particular news item only...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectionOfNews" lastModified="2010-09-08T00:00:00">
+    <value>Selection of news:</value>
+    <comment>phrase: Selection of news:</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhichNewsToDisplay" lastModified="2010-09-08T00:00:00">
+    <value>Which news to display?</value>
+    <comment>phrase: Which news to display?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectNews" lastModified="2010-09-08T00:00:00">
+    <value>Select news</value>
+    <comment>phrase: Select news</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoNewsHaveBeenCreatedYet" lastModified="2010-09-08T00:00:00">
+    <value>No news have been created yet</value>
+    <comment>phrase: No news have been created yet</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectBlog" lastModified="2010-09-08T00:00:00">
+    <value>Select a blog</value>
+    <comment>phrase: Select a blog</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChooseBlogs" lastModified="2010-09-08T00:00:00">
+    <value>Choose Blogs</value>
+    <comment>phrase: Choose Blogs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowBlogTitle" lastModified="2010-09-08T00:00:00">
+    <value>Narrow by typing blog title</value>
+    <comment>phrase: Narrow by typing blog title</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NarrowPostTitle" lastModified="2010-09-08T00:00:00">
+    <value>Narrow by typing post title</value>
+    <comment>phrase: Narrow by typing post title</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChooseBlogPost" lastModified="2010-09-08T00:00:00">
+    <value>Choose a Blog Post</value>
+    <comment>phrase: Choose a Blog Post</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhichBlogPostsToDisplay" lastModified="2010-09-08T00:00:00">
+    <value>Which blog posts to display?</value>
+    <comment>phrase: Which blog posts to display?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FromAllBlogs" lastModified="2010-09-08T00:00:00">
+    <value>From all blogs</value>
+    <comment>phrase: From all blogs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="FromSelectedBlogsOnly" lastModified="2010-09-08T00:00:00">
+    <value>From selected blogs only...</value>
+    <comment>phrase: From selected blogs only...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="BlogNotSelected" lastModified="2010-09-08T00:00:00">
+    <value>Blog is not selected</value>
+    <comment>phrase: Blog is not selected</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllPublishedPostsFromSelectedBlogs" lastModified="2010-09-08T00:00:00">
+    <value>All published posts from selected blogs</value>
+    <comment>phrase: All published posts from selected blogs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OneParticularPostOnly" lastModified="2010-09-08T00:00:00">
+    <value>One particular post only...</value>
+    <comment>phrase: One particular post only...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoSelectedBlogPost" lastModified="2010-09-08T00:00:00">
+    <value>No selected blog post</value>
+    <comment>phrase: No selected blog post</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectBlogPost" lastModified="2010-09-08T00:00:00">
+    <value>Select a blog post</value>
+    <comment>phrase: Select a blog post</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectionOfPosts" lastModified="2010-09-08T00:00:00">
+    <value>Selection of posts:</value>
+    <comment>phrase: Selection of posts:</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ByCategories" lastModified="2010-09-08T00:00:00">
+    <value>by Categories...</value>
+    <comment>phrase: by Categories...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ByTags" lastModified="2010-09-08T00:00:00">
+    <value>by Tags...</value>
+    <comment>phrase: by Tags...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ByDates" lastModified="2010-09-08T00:00:00">
+    <value>by Dates...</value>
+    <comment>phrase: by Dates...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoBlogsAreCreated" lastModified="2010-09-08T00:00:00">
+    <value>No blogs are created</value>
+    <comment>phrase: No blogs are created</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedBlogWasDeletedSelectAnotherBlog" lastModified="2010-09-08T00:00:00">
+    <value>The selected blog was deleted. Please select another blog.</value>
+    <comment>phrase: The selected blog was deleted. Please select another blog.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedBlogWasDeleted" lastModified="2010-09-08T00:00:00">
+    <value>The selected blog was deleted</value>
+    <comment>phrase: The selected blog was deleted</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectionOfEvents" lastModified="2010-09-08T00:00:00">
+    <value>Selection of events</value>
+    <comment>phrase: Selection of events</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectEvent" lastModified="2010-09-08T00:00:00">
+    <value>Select an event</value>
+    <comment>phrase: Select an event</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OneParticularEventOnly" lastModified="2010-09-08T00:00:00">
+    <value>One particular event only...</value>
+    <comment>phrase: One particular event only...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllPublishedEvents" lastModified="2010-09-08T00:00:00">
+    <value>All published events</value>
+    <comment>phrase: All published events</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ChooseEvents" lastModified="2010-09-08T00:00:00">
+    <value>Choose events</value>
+    <comment>phrase: Choose events</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="WhichEventsToDisplay" lastModified="2010-09-08T00:00:00">
+    <value>Which events to display?</value>
+    <comment>phrase: Which events to display?</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllUpcommingCurrentAndPastEvents" lastModified="2010-09-08T00:00:00">
+    <value>All upcoming, current, and past events</value>
+    <comment>phrase: All upcoming, current, and past events</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UpcommingEventsOnly" lastModified="2010-09-08T00:00:00">
+    <value>Upcoming events only</value>
+    <comment>phrase: Upcoming events only</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CurrentEventsOnly" lastModified="2010-09-08T00:00:00">
+    <value>Current events only</value>
+    <comment>phrase: Current events only</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="PastEventsOnly" lastModified="2010-09-08T00:00:00">
+    <value>Past events only</value>
+    <comment>phrase: Past events only</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="UpcommingAndCurrentEvents" lastModified="2010-09-08T00:00:00">
+    <value>Upcoming and current events</value>
+    <comment>phrase: Upcoming and current events</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CurrentAndPastEvents" lastModified="2010-09-08T00:00:00">
+    <value>Current and past events</value>
+    <comment>phrase: Current and past events</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoEventsHaveBeenCreatedYet" lastModified="2010-09-08T00:00:00">
+    <value>No events have been created yet</value>
+    <comment>phrase: No events have been created yet</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectLanguageVersion" lastModified="2010-10-08T00:00:00">
+    <value>Select language version</value>
+    <comment>phrase: Select language version</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectContent" lastModified="2010-10-08T00:00:00">
+    <value>Select content</value>
+    <comment>phrase: Select content</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllLanguages" lastModified="2010-10-08T00:00:00">
+    <value>All languages</value>
+    <comment>phrase: All languages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AllContent" lastModified="2010-10-08T00:00:00">
+    <value>All content</value>
+    <comment>phrase: All content</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Bulgarian" lastModified="2010-10-08T00:00:00">
+    <value>Bulgarian</value>
+    <comment>word: Bulgarian</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="English" lastModified="2010-10-08T00:00:00">
+    <value>English</value>
+    <comment>word: English</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Russian" lastModified="2010-10-08T00:00:00">
+    <value>Russian</value>
+    <comment>word: Russian</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="French" lastModified="2010-10-08T00:00:00">
+    <value>French</value>
+    <comment>word: French</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Translations" lastModified="2010-10-08T00:00:00">
+    <value>Translations</value>
+    <comment>word: Translations</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ArgumentNameCannotBeZero" lastModified="2010-10-12T00:00:00">
+    <value>Argument {0} cannot be zero (0)</value>
+    <comment>Error message. {0} is a placeholder for the argument name</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomSorting" lastModified="2010-10-12T00:00:00">
+    <value>Custom sorting</value>
+    <comment>Custom sorting</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Ascending" lastModified="2010-10-12T00:00:00">
+    <value>Ascending</value>
+    <comment>Ascending</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Descending" lastModified="2010-10-12T00:00:00">
+    <value>Descending</value>
+    <comment>Descending</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectCssFile" lastModified="2010-10-18T00:00:00">
+    <value>Select a CSS file</value>
+    <comment>phrase: Select a CSS file</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectJsFile" lastModified="2010-10-18T00:00:00">
+    <value>Select a Javascript file</value>
+    <comment>phrase: Select a Javascript file</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectATemplate" lastModified="2010-10-18T00:00:00">
+    <value>Select a template</value>
+    <comment>phrase: Select a template</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="GenerateThumbnails" lastModified="2010-10-18T00:00:00">
+    <value>Generate thumbnails</value>
+    <comment>phrase: Generate thumbnails</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="GeneralSettings" lastModified="2010-10-21T00:00:00">
+    <value>General settings</value>
+    <comment>Phrase: General settings</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ProjectName" lastModified="2010-10-21T00:00:00">
+    <value>Project name</value>
+    <comment>Phrase: Project name</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TimeZone" lastModified="2010-10-21T00:00:00">
+    <value>Time zone</value>
+    <comment>Phrase: Time zone</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AutomaticallyAdjustClockForDaylightSavingTime" lastModified="2010-10-21T00:00:00">
+    <value>Automatically adjust clock for Daylight Saving Time</value>
+    <comment>Phrase: Automatically adjust clock for Daylight Saving Time</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SupportsDaylightSavingTimeDescription" lastModified="2010-10-21T00:00:00">
+    <value>Daylight Saving Time ends on 31 October at 04:00. The clock is set to go back 1 hour at that time.</value>
+    <comment>Phrase: Daylight Saving Time ends on 31 October at 04:00. The clock is set to go back 1 hour at that time.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SetAsDefault" lastModified="2010-10-23T00:00:00">
+    <value>Set as default</value>
+    <comment>phrase: Set as default</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="AddLanguagesHellip" lastModified="2010-10-25T00:00:00">
+    <value>Add languages&amp;hellip;</value>
+    <comment>phrase: Add languages&amp;hellip;</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="TranslateFrom" lastModified="2010-10-21T00:00:00">
+    <value>Translate from:</value>
+    <comment>Phrase: Translate from:</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DefaultLanguageBackendSystem" lastModified="2010-10-26T00:00:00">
+    <value>Default language for the backend system</value>
+    <comment>phrase: Default language for the backend system</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Languages" lastModified="2010-10-26T00:00:00">
+    <value>Languages</value>
+    <comment>word: Languages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LanguagesPublicContent" lastModified="2010-11-05T00:00:00">
+    <value>Languages for public content</value>
+    <comment>phrase: Languages for public content</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ManageBackendLanguages" lastModified="2010-10-26T00:00:00">
+    <value>Manage backend languages</value>
+    <comment>phrase: Manage backend languages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LanguagesForBackendSystem" lastModified="2010-10-26T00:00:00">
+    <value>Languages for the backend system</value>
+    <comment>phrase: Languages for the backend system</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CloseLanguagesBackendSystem" lastModified="2010-10-26T00:00:00">
+    <value>Close languages for the backend system</value>
+    <comment>phrase: Close languages for the backend system</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="MultilingualUrls" lastModified="2010-10-27T00:00:00">
+    <value>Multilingual URLs</value>
+    <comment>phrase: Multilingual URLs</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Directories" lastModified="2010-10-27T00:00:00">
+    <value>Directories</value>
+    <comment>word: Directories</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DifferentDomains" lastModified="2010-10-27T00:00:00">
+    <value>Different domains</value>
+    <comment>phrase: Different domains</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ExampleDirectoriesUrlStrategy" lastModified="2010-10-27T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt;&lt;br /&gt;domain.com/contact-us - English;&lt;br /&gt;domain.com/es/contacto - Spanish</value>
+    <comment>phrase: Example: domain.com/contact-us - English; domain.com/es/contacto - Spanish</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ExampleDomainsUrlStrategy" lastModified="2010-10-27T00:00:00">
+    <value>&lt;strong&gt;Example:&lt;/strong&gt;&lt;br /&gt;domain.com - English;&lt;br /&gt;es.domain.com or domain.es - Spanish</value>
+    <comment>phrase: Example: domain.com - English; es.domain.com or domain.es - Spanish</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SpecifyDomainForEachLanguage" lastModified="2010-10-27T00:00:00">
+    <value>Specify domain for each language</value>
+    <comment>phrase: Specify domain for each language</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SettingsUpdated" lastModified="2010-11-05T00:00:00">
+    <value>Settings have been updated.</value>
+    <comment>phrase: Settings have been updated.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LanguageSelectorDesignerEditorTitle" lastModified="2010-10-22T00:00:00">
+    <value>Language selector</value>
+    <comment>Title: Language selector</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LanguageSelectorModeText" lastModified="2010-10-22T00:00:00">
+    <value>Display language selector as...</value>
+    <comment>Label: Display language selector as...</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HeaderLanguagesWithoutTranslation" lastModified="2010-10-26T00:00:00">
+    <value>What to do with languages without trnaslations?</value>
+    <comment>Label - no translation action setting - header</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HeaderLanguagesWithoutTranslationExpl" lastModified="2010-10-26T00:00:00">
+    <value>Some pages or content items may not be translated to all languages. How should the language selector behave when translation is missing?</value>
+    <comment>Label - no translation action setting - explanation</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoTranslationHideLink" lastModified="2010-10-26T00:00:00">
+    <value>Hide the link to the missing translation</value>
+    <comment>Label: Hide the link to the missing translation</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoTranslationRedirectToPage" lastModified="2010-10-26T00:00:00">
+    <value>Redirect to the home page in the language of the missing translation</value>
+    <comment>Label: Redirect to the home page in the language of the missing translation</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="IncludeCurrentLanguage" lastModified="2010-10-26T00:00:00">
+    <value>Include the current language in the selector</value>
+    <comment>Label: Include the current language in the selector</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="HorizontalList" lastModified="2010-10-26T00:00:00">
+    <value>Horizontal list</value>
+    <comment>Label: Horizontal list</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="VerticalList" lastModified="2010-10-26T00:00:00">
+    <value>Vertical list</value>
+    <comment>Label: Vertical list</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="DropDownMenu" lastModified="2010-10-26T00:00:00">
+    <value>Drop-down menu</value>
+    <comment>Label: Drop-down menu</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="OnlyAvailableInMultilingualMode" lastModified="2010-10-25T00:00:00">
+    <value>This control is only avalable in multilingual mode.</value>
+    <comment>Message: This control is only avalable in multilingual mode.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowCultures" lastModified="2010-10-28T00:00:00">
+    <value>Show cultures</value>
+    <comment>phrase: Show cultures</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="ShowOnlyLanguages" lastModified="2010-10-28T00:00:00">
+    <value>Show only languages</value>
+    <comment>phrase: Show only languages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectLanguages" lastModified="2010-11-01T00:00:00">
+    <value>Select languages</value>
+    <comment>phrase: Select languages</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="InvalidDomain" lastModified="2010-10-28T00:00:00">
+    <value>Invalid domain</value>
+    <comment>phrase: Invalid domain</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="SelectedLanguagesAlreadyAdded" lastModified="2010-11-02T00:00:00">
+    <value>One or more of the selected languages are already added.</value>
+    <comment>phrase: One or more of the selected languages are already added.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomLowercase" lastModified="2010-11-11T00:00:00">
+    <value>custom</value>
+    <comment>Labels: custom</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NoCommentsLabel" lastModified="2010-10-29T00:00:00">
+    <value>Go comment!</value>
+    <comment>phrase: The label to be set if there are no comments.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="GoBack" lastModified="2010-11-16T00:00:00">
+    <value>Go back</value>
+    <comment>phrase: Go back</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="StartingPageUnpublished" lastModified="2010-12-09T00:00:00">
+    <value>Warning: the selected starting page is unpublished.</value>
+    <comment>Message: The starting page is unpublished.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="LockedByFormat" lastModified="2010-11-17T00:00:00">
+    <value>Locked by {0} | {1}</value>
+    <comment>phrase: Locked by {0} | {1}</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="NewerThanPublishedInParentheses" lastModified="2010-11-17T00:00:00">
+    <value>(newer than published)</value>
+    <comment>phrase: (newer than published)</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Back" lastModified="2010-11-30T00:00:00">
+    <value>Back</value>
+    <comment>word: Back</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="CustomFieldsSection" lastModified="2010-11-30T00:00:00">
+    <value>CustomFieldsSection</value>
+    <comment>phrase: CustomFieldsSection</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="GoToTheSite" lastModified="2010-12-10T00:00:00">
+    <value>Live site</value>
+    <comment>phrase: GoToTheSite</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="GoToTheSiteTitle" lastModified="2010-12-10T00:00:00">
+    <value>Opens live site in a new window</value>
+    <comment>phrase: Opens live site in a new window</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="YesStopSyncing" lastModified="2010-12-14T00:00:00">
+    <value>Yes, Stop syncing</value>
+    <comment>phrase: Yes, Stop syncing</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="YouDoNotHaveThePermissionsToDeleteThisItem" lastModified="2010-12-21T00:00:00">
+    <value>You do not have the permissions to delete this item.</value>
+    <comment>This error message appears when the user tries to delete a single item, but has no permissions to do it.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="YouDoNotHaveThePermissionsToDeleteTheseItems" lastModified="2010-12-21T00:00:00">
+    <value>You do not have the permissions to delete these items.</value>
+    <comment>This error message appears when the user tries to delete multiple items, but has no permissions delete any of them.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="YouDoNotHaveThePermissionsToDeleteSomeOfTheItems" lastModified="2010-12-21T00:00:00">
+    <value>You do not have the permissions to delete {0} of the items.</value>
+    <comment>This error message appears when the user tries to delete multiple items, but has no permissions delete some of them.</comment>
+    <builtIn>true</builtIn>
+  </data>
+  <data name="Paging_Title" lastModified="2011-01-05T09:49:39">
+    <value>Page</value>
+    <comment>The text shown before the numeric pager links</comment>
+  </data>
+</root>

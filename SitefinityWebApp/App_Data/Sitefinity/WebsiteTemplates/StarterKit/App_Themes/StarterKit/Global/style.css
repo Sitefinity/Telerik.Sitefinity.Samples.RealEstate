@@ -1,0 +1,705 @@
+body {
+	background: #eceef4;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	color: #4b4b4b;
+}
+
+a{
+	color:#6F7BA3;
+}
+a:hover{
+	text-decoration:none;
+}
+
+h1{
+	font-size:32px;
+	font-weight:normal;
+}
+h2{
+	font-size:20px;
+	font-weight:normal;
+}
+h3{
+	font-size:18px;
+	font-weight:normal;
+}
+
+
+#container {
+	position: relative;
+	float: left;
+	width: 980px;
+	padding: 20px;
+	background-color: white;
+	left: 50%;
+	margin-left: -510px;
+}
+.sf_3cols_2_34 .sf_3cols_2in_34, .sf_3cols_3_33 .sf_3cols_3in_33 {
+    margin-left: 20px;
+}
+
+
+/* .topstrip is a wrapper class set to 100% width layout element placed in the template through the page editor */
+
+.topstrip .sfContentBlock h1 {
+	position: relative;
+	float: left;
+	width: 100%;
+	font-size: 26px;
+	font-family: Georgia;
+	font-weight:normal;
+	letter-spacing: -1px;
+	color: black;
+	margin: 0px;
+	color: white;
+	margin-bottom: 0px;
+	text-indent: 15px;
+}
+
+.topstrip .sfContentBlock h4 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight:normal;
+	color: white;
+	text-indent: 15px;
+}
+
+.topstrip {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-image: url(../Images/header-bg.png);
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*=======================*/
+/*Main navigation styles*/
+/*=======================*/
+
+.RadTabStrip_navigation span, 
+.RadTabStrip_navigation .rtsIn, 
+.RadTabStrip_navigation .rtsOut,
+.RadTabStrip_navigation .rtsLink,
+.RadTabStrip_navigation .rtsLI {
+	padding: 0px;
+	line-height: 40px;
+	margin: 0px;
+}
+
+div.RadTabStrip_navigation {
+	width: 100%;
+	background-color: #333;
+	position: relative;
+	float: left;
+}
+
+.RadTabStrip_navigation .rtsLI a.rtsLink{
+	position: relative;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #333;
+	color: #eee;
+	line-height: 40px;
+	border-left: 1px solid #404040;
+	border-right: 1px solid #303030;
+}
+
+.RadTabStrip_navigation .rtsLI a.rtsLink:hover {
+	background-color: #444;
+	border-left: 1px solid #505050;
+	border-right: 1px solid #404040;
+	color: white; 	
+}
+
+
+/*THE PROPERTIES SLIDER IN THE HEADER */
+
+
+.properties-carousel{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-bottom: 20px;
+}
+.properties-slides {
+	position: relative;
+	float: left;
+	width: 980px;
+	overflow: hidden;
+	height: 240px;
+}
+
+.information-area {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	width: 260px;
+	height: 120px;
+	padding: 15px;
+	background-color: #fff;
+	color: #333;
+}
+
+.jcarousel-item {
+	position: relative;
+	float: left;
+	width: 300px;
+}
+
+.information-area-left h2 {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	font-size: 13px;
+}
+.information-area-left  .price,
+.row p.price	 {
+	position: relative;
+	float: left;
+	padding: 0px 10px;
+	color: white;
+	background-image: url(../Images/btn.png);
+	height: 32px;
+	line-height: 32px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+.information-area-left,
+.information-area-right {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+.information-area-left a {
+	position: absolute;
+	top:135px;
+	left: 80px;
+	color: #eee;
+	background-color: #333;
+	padding: 5px 10px;
+	font-size: 11px;
+	text-decoration: none;
+	width: 120px;
+}
+
+.information-area-right ul,
+.for-rent .row div ul,
+.for-sale .row div ul{
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-left: 1px solid #eee
+}
+
+.information-area-right ul li,
+.for-rent .row div ul li,
+.for-sale .row div ul li,
+.row .column .block .block-content ul li{
+	position: relative;
+	float: left;
+	text-indent: 20px;
+	font-size: 11px;
+	background-image: url(../Images/link-arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	line-height: 20px;
+	list-style: none;
+	list-style-position: inside;
+	color: #666;
+	width: 100%;
+}
+
+
+
+.sfnewsList,
+.sfeventsList 
+{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.sfnewsSummary{
+	margin:10px 0;
+}
+.sfnewsList li.sfnewsListItem,
+.sfeventsList li.sfeventListItem{
+	
+	position: relative;
+	float: left;
+	width: 100%;
+	margin:0 0 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+.sf_3cols_1_33 .sfnewsList li.sfnewsListItem,
+.sf_3cols_2_34 .sfeventsList li.sfeventListItem{
+font-size:11px;
+}
+
+.sfnewsList li.sfnewsListItem h2.sfnewsTitle,
+.sfeventsList li.sfeventListItem h2.sfeventTitle{
+	position: relative;
+	float: left;
+	width: 100%;
+	letter-spacing: -1px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sfnewsList li.sfnewsListItem h2.sfnewsTitle a,
+.sfeventsList li.sfeventListItem h2.sfeventTitle a {
+	color: #666;
+	text-decoration: none;
+}
+
+
+.sfnewsMetaInfo a,
+.sfeventMetaInfo a {
+}
+
+.row {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	padding-bottom:25px;
+	border-bottom:1px solid #eee;
+}
+
+.row a {
+	float: left;
+	
+}
+.row div {
+	position: relative;
+	float: left;
+	margin-left: 25px;
+	width: 480px;
+}
+
+.row a img {
+	border: 3px solid #ccc;
+	background-color: #eee;
+
+}
+
+.row div h2 {
+	font-size: 24px;
+	font-weight:normal;
+	margin: 0;
+	letter-spacing: -1px;
+	width: 100%;
+	padding-bottom: 15px;
+	height: 15px;
+}	
+
+.row div h2 a {
+	color: #6F7BA3;
+	text-decoration: none;
+	display: inline;
+	line-height: 30px;
+}
+
+
+.row div p {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.row div p.price {
+	width: auto;
+	border-radius:4px;
+}
+
+.row div a +  {
+	position: relative;
+	float: left;
+	margin-top: 10px;
+	background-color: #333;
+	color: white;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.section-title{
+	font-size:32px;
+	font-weight:normal;
+}
+.sorting {
+	font-size:11px;
+	overflow:hidden;
+	position: relative;
+	background:#eee;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+.sorting .left,
+.sorting .right, 
+.sorting .center {
+	position: relative;
+	float: left;
+	width: 33%;
+}
+.sorting .right{
+	text-align:center;
+}
+.sorting .center{
+	text-align:right;
+}
+
+.sorting a {
+}
+
+.sorting a:hover {
+	text-decoration: none;
+}
+
+.message{
+	clear:both;
+	margin:0 0 10px 0;
+	padding:10px 20px;
+	background:#f2f2f2;
+}
+
+.news-events-list  {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.news-events-list  h3{
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Georgia;
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.news-events-list  h3 a {
+	color: #6F7BA3;
+	text-decoration: none;
+}
+
+.news-events-list .item  p {
+	font-size: 11px;
+	color: #555;
+}
+
+.news-events-list .item  p.date {
+	margin: 0px;
+	font-size: 12px;
+}
+
+.news-events-list .item  {
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.footertext{
+	color: #fff !important;
+	background-color: #333;
+	padding: 15px;
+}
+.footertext p{
+	font-size:11px;
+	margin-top:0;
+}
+.row .column {
+	width: 275px;
+	margin-right: 10px;
+}
+
+.row .column .block-content h3 {
+	font-size:22px;
+	font-weight:normal;
+	width: 100%;
+	position: relative;
+	margin:0;
+	float: left;
+}
+
+.row .column .block-content h3 a{
+	color: #6F7BA3;
+	text-decoration:none;
+}
+.row .column .block-content ul{
+	padding-left:0;
+	margin-bottom:0;
+	clear:both;
+	overflow:hidden;
+}
+
+.row .column div {
+	margin: 0px; 	
+	width: 100%;
+}
+
+.row .column div {
+
+}
+
+.property-item {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.property-item .row {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.property-item .row .column {
+	width: 100%;
+	position: relative;
+	float: left;
+
+}
+
+.row div.RadTabStrip {
+	position: relative;
+	float: left;
+	width: 100% !important;
+	border: 0px;
+	line-height: 30px;
+	background-color: #6F7BA3;
+}
+
+.property-item  .row div.RadTabStrip ul {
+	width: 100%;
+	line-height: 30px;
+}
+
+.property-item .row .RadTabStrip .rtsLI {
+	position: relative;
+	float: left;
+	text-indent: 0px;
+	background: none;
+	line-height: 30px !important;
+	width: auto;
+}
+
+.property-item .row div {
+	margin-left: 0px;
+}
+
+.property-item .RadTabStrip .rtsLI  a.rtsLink {
+	background-image: none;
+	padding-left: 10px;
+	color: white;
+	padding-right: 10px;
+}
+
+.row div.exampleWrapper {
+	width: 100%;
+}
+
+.property-item .RadTabStrip .rtsLI  a.rtsLink:hover {
+	background-color: #56638C;
+}
+
+.row.self-clear  .pageView {
+
+}
+
+.row .exampleWrapper div{
+	position: relative;
+	float: left;
+	width: auto;
+}
+.row div.exampleWrapper div.property-carousel {
+	margin-top:70px;
+	margin-left: 120px;
+}
+.row div.exampleWrapper div.property-carousel,
+.row div.exampleWrapper div.jcarousel-clip {
+	width: 500px;
+}
+
+.row div.exampleWrapper div.jcarousel-clip img {
+	border: 0px;
+	margin: 0px;	
+}
+
+.row div.exampleWrapper div.jcarousel-clip {
+	border: 3px solid #333;
+}
+
+div.property-item div.row div.column {
+	min-height:170px;
+	position: relative;
+	float: left;
+	width: 20%;
+	margin:0 0 0 -1px;
+	padding:2.5%;
+	padding-top:10px;
+	border-left:1px solid #eee;
+}
+div.property-item div.row div.column dd {
+	margin:0;
+}
+
+div.property-item div.row div.exampleWrapper div.column {
+	width: 200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+	margin: 0px;	
+	background-color: #ddd;
+}
+
+div.property-item div.row div.exampleWrapper dl {
+	width: 100%;
+}
+
+div.property-item div.row div.exampleWrapper dd,
+div.property-item div.row div.exampleWrapper dt{
+	margin: 0;
+	position: relative;
+	float: left;
+	width: 50%;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d0d0d;
+	padding: 0px;
+	line-height: 20px;
+}
+div.property-item div.row div.exampleWrapper dt{
+	font-weight: bold;
+}
+
+.row div.exampleWrapper  {
+	margin:0 0 20px 0;
+	background-color: #eee;
+}
+
+.exampleWrapper div.price {
+	position: relative;
+	float: left;
+}
+
+.agents .row .column-small {
+	position: relative;
+	float: left;
+	width: 29%;
+}
+
+.agent-single.content  .page-content {
+	margin-top: 30px;
+}
+.agent-single.content  .page-content .form-item label {
+	display:block;
+	position: relative;
+	float: left;
+	width: 180px;
+}
+
+.agent-single.content  .page-content .form-item label.regular-label {
+	width: 280px;
+}
+
+.agent-single.content  .page-content .form-item {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	width: 100%;
+}
+
+
+.contact-form{
+	margin-right:20px;
+	padding:10px 20px 20px 20px;
+	background:#f2f2f2;
+}
+.contact-form input.sfTxt{
+	width:250px;
+	padding:5px 2px;
+}
+.contact-form textarea.sfTxt{
+	width:250px;
+}
+.contact-form .sfFormSubmit input{
+	margin-top:20px;
+}
+
+.more-properties ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.more-properties ul li{
+	float:left;
+	margin:0 28px 15px 0;
+}
+.more-properties ul h3{
+	font-size:14px;
+	margin:5px 0 20px 0;
+}
+
+
+
+.sfFieldWrp {
+	margin-bottom: 10px;
+}
+
+.sfFieldWrp div {
+	font-size: 11px;
+	font-variant: italic;
+	color: #999;
+}
+
+.sfError {
+	background-color: #333;
+	color: white;
+	padding: 5px 10px;
+	font-size: 11px;
+	
+	margin-bottom: 10px; 	
+}
+
+.block-twitter {
+	position: relative;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.block-twitter .item {
+	position: relative;
+	float:left;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 11px;
+	padding-top: 10px;
+	border-top: 1px solid #eee;
+}
+
+.block-twitter .item a {
+	color: #888;
+}

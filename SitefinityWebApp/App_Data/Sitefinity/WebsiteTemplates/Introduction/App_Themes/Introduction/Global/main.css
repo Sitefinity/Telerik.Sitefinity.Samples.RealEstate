@@ -1,0 +1,158 @@
+﻿body 
+{
+    background-color: #aab0b5;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    color: #343434;
+    font-size: 12px;
+    line-height: 20px;
+    background-image: url(../Images/background.jpg);
+    background-position: center top;
+    background-repeat: repeat-y;
+}
+
+#wrapper 
+{
+    position: relative;
+    float: left;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+}
+
+#header 
+{
+    width: 900px;
+    height: 100px;
+    background-color: #21242c;
+    position: relative;
+    float: left;
+    border-bottom: 4px solid #ccff00;
+    background-image: url(../Images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+#screenshots 
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 100px;
+}
+
+#screenshots img 
+{
+    position: absolute;
+    left: -80px;
+    top: -40px;
+    z-index: 5;
+}
+
+#content 
+{
+    position: relative;
+    float: left;
+    width: 860px;
+    padding: 20px;
+    background-color: #dadee1;
+}
+
+h1 
+{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size:18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+table 
+{
+    position: relative;
+    float: left;
+    width: 100%;
+    border-left: 1px solid #c3c7cb;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+table tr th 
+{
+    background-color: #4a4d54;
+    color: White;
+    text-align: left;
+}
+
+table tr th, table tr td 
+{
+    padding: 10px;
+}
+
+table tr td 
+{
+    border-bottom: 1px solid #c3c7cb;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #c3c7cb;
+    border-left: 1px solid #fff;
+    vertical-align: top;
+}
+
+table tr.altrow td
+{
+    background-color: #e3e6e8;
+}
+
+table strong 
+{
+    color: black;
+}
+
+#skip-page
+{
+    position: relative;
+    float: left;
+    background-color: #b2b6b8;
+    width: 860px;
+    padding: 20px 20px 15px 20px;
+    margin-top: 0px;
+    height: 80px;
+    border-top: 1px solid #9ca4a9;
+}
+
+a.skip, a.skip-backend
+{
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    width: 291px;
+    height: 75px;
+    overflow: hidden;
+    text-indent: -5000px;
+    background-image: url(../Images/button.jpg);
+}
+
+a.skip:hover, a.skip-backend:hover
+{
+    background-position: 0 -75px;
+}
+
+a.skip-backend 
+{
+    background-image: url(../Images/button2.jpg);
+}
+
+.note 
+{
+    color: #666;
+    font-size: 11px;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+}

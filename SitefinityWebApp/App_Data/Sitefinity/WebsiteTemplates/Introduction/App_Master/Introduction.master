@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />     
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div id="wrapper">
+            <div id="header">
+                <div id="screenshots">
+                    <asp:contentplaceholder id="Screenshots" runat="server" />
+                </div>
+            </div>
+            <div id="skip-page">
+                <a class="skip" href="~/home" runat="server" >Home</a>
+                <a class="skip-backend" href="~/sitefinity" runat="server" >Backend</a>
+            </div>
+            <div id="content">
+                <asp:contentplaceholder id="Content" runat="server" />
+            </div>
+
+        </div>
+   </form>
+</body>
+</html>
+
+

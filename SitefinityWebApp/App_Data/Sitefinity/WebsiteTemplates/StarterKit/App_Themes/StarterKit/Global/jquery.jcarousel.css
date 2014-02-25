@@ -1,0 +1,134 @@
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+	float: left;
+	margin-top: 15px;
+}
+
+.jcarousel-item img {
+	border: 3px solid #eee;
+	margin-top:15px;
+}
+
+.jcarousel-clip {
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 4;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 307px;
+    height: 100px;
+	padding-bottom:15px;
+	margin-right:20px;
+	border-right:1px solid #eee;
+}
+
+.row div.exampleWrapper .jcarousel-item {
+	height: 250px;
+	margin-right: 10px;
+	overflow:hidden;
+	width: 500px;
+}
+
+.row div.exampleWrapper .info {
+	background-color: #333;
+	color: #fff;
+	line-height: 36px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next,
+.row div.exampleWrapper div.jcarousel-next,
+.jcarousel-prev,
+.jcarousel-prev  {
+    z-index: 6;
+    display: none;
+	width: 44px !important;
+	height: 44px !important;
+	background-image: url(../Images/carousel-arrows.png);
+	position: absolute;
+	top: 30px;
+	cursor: pointer;
+}
+.jcarousel-prev {
+	left: -40px;
+}
+
+.jcarousel-prev-disabled,
+.jcarousel-next-disabled {
+	display: none !important;
+}
+.jcarousel-next {
+	background-position: 0 -44px;
+	right: -40px;
+}
+
+.row div.exampleWrapper div.jcarousel-prev {
+	left: -20px;
+	top: -140px;
+}
+
+.row div.exampleWrapper div.jcarousel-next {
+	right: -28px;
+	top: 120px;
+}
+
+.jcarousel-item div.inner div {
+	position: absolute;
+	left: 150px;
+	right:20px;
+	top: 0px;
+}
+
+.jcarousel-item div.inner div h3{
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+
+.jcarousel-item div.inner div p {
+	margin: 0;
+	font-size: 11px;
+}
+
+.jcarousel-item div.inner div a {
+	display:block;
+	position: absolute;
+	left: 0px;
+	font-size: 11px;
+	text-decoration: none;
+	top:90px;
+	color: white;
+	padding: 5px 10px;
+	background-color: #444;
+}
+
+.jcarousel-item div.inner div a:hover {
+	background-color: #555;
+}

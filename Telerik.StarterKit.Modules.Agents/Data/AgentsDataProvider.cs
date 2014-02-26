@@ -118,11 +118,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
                 return SetExpressions(this.GetAgents(), filterExpression, orderExpression, skip, take, ref totalCount);
             }
 
-            if (itemType == typeof(Comment))
-            {
-                return SetExpressions(this.GetComments(), filterExpression, orderExpression, skip, take, ref totalCount);
-            }
-
             throw GetInvalidItemTypeException(itemType, this.GetKnownTypes());
         }
 
@@ -213,11 +208,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
 
         public override object GetItemOrDefault(Type itemType, Guid id)
         {
-            if (itemType == typeof(Comment))
-            {
-                return this.GetComments().Where(c => c.Id == id).FirstOrDefault();
-            }
-
             if (itemType == typeof(AgentItem))
                 return this.GetAgents().Where(n => n.Id == id).FirstOrDefault();
 

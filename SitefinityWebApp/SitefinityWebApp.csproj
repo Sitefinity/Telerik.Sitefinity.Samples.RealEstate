@@ -785,9 +785,6 @@
     <ProjectReference Include="..\Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj">
       <Name>Telerik.Sitefinity.Samples.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TemplateImporter\TemplateImporter.csproj">
-      <Name>TemplateImporter</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Telerik.StarterKit.Modules.Agents\Telerik.StarterKit.Modules.Agents.csproj">
       <Name>Telerik.StarterKit.Modules.Agents</Name>
     </ProjectReference>
@@ -827,7 +824,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>60876</DevelopmentServerPort>
+          <DevelopmentServerPort>3309</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

@@ -12,8 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Twitter", "Telerik.StarterKit.Widgets.Twitter\Telerik.StarterKit.Widgets.Twitter.csproj", "{5C532A79-C354-47CD-AAC6-9F56227E944B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateImporter", "TemplateImporter\TemplateImporter.csproj", "{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.Sitefinity.Samples.Common", "Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj", "{CF03FB62-A8CC-42B4-9C81-87920C530D74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitefinityWebApp", "SitefinityWebApp\SitefinityWebApp.csproj", "{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}"
@@ -61,12 +59,6 @@ Global
 		{5C532A79-C354-47CD-AAC6-9F56227E944B}.Release Pro|Any CPU.Build.0 = Release|Any CPU
 		{5C532A79-C354-47CD-AAC6-9F56227E944B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C532A79-C354-47CD-AAC6-9F56227E944B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
-		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Release Pro|Any CPU.Build.0 = Release|Any CPU
-		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU

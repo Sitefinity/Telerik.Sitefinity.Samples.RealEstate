@@ -803,6 +803,10 @@
     <ProjectReference Include="..\Telerik.StarterKit.Widgets.Twitter\Telerik.StarterKit.Widgets.Twitter.csproj">
       <Name>Telerik.StarterKit.Widgets.Twitter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TemplateImporter\TemplateImporter.csproj">
+      <Project>{fc9b3f46-af6a-43ad-a57c-75ee1cf1d5a3}</Project>
+      <Name>TemplateImporter</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

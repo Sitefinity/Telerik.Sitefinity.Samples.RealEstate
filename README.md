@@ -25,7 +25,7 @@ This starter kit provides companies with a head start on their project. In addit
 
 ### Prerequisites
 
-You need to attach the database backeup files to your SQL Server. To do this:
+You need to attach the database backup files to your SQL Server. To do this:
 
 1. In SQL Management Studio, open the context menu of _Databases_ and click _Attach..._
 2. Click the _Add..._ button and navigate to the _SitefinityWebApp_ -> *App_Data* folder.

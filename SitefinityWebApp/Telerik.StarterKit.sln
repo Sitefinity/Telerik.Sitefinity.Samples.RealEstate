@@ -1,22 +1,29 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Modules.Agents", "Telerik.StarterKit.Modules.Agents\Telerik.StarterKit.Modules.Agents.csproj", "{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{ECB5BA52-A663-4234-B1F6-4C5DD6D3FF0A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Modules.RealEstate", "Telerik.StarterKit.Modules.RealEstate\Telerik.StarterKit.Modules.RealEstate.csproj", "{E541FED4-E70D-4E31-9F7F-75D2A3B9EC56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitefinityWebApp", "SitefinityWebApp.csproj", "{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Events", "Telerik.StarterKit.Widgets.Events\Telerik.StarterKit.Widgets.Events.csproj", "{D5911215-60BC-47EE-960C-6C56800D4017}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.Sitefinity.Samples.Common", "..\Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj", "{CF03FB62-A8CC-42B4-9C81-87920C530D74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Facebook", "Telerik.StarterKit.Widgets.Facebook\Telerik.StarterKit.Widgets.Facebook.csproj", "{3ACCDA8B-2588-410A-8880-04BCC14FDE77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Modules.Agents", "..\Telerik.StarterKit.Modules.Agents\Telerik.StarterKit.Modules.Agents.csproj", "{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.News", "Telerik.StarterKit.Widgets.News\Telerik.StarterKit.Widgets.News.csproj", "{A0CC580E-A8A1-4B7C-9402-328B51C92EC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Modules.RealEstate", "..\Telerik.StarterKit.Modules.RealEstate\Telerik.StarterKit.Modules.RealEstate.csproj", "{E541FED4-E70D-4E31-9F7F-75D2A3B9EC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Twitter", "Telerik.StarterKit.Widgets.Twitter\Telerik.StarterKit.Widgets.Twitter.csproj", "{5C532A79-C354-47CD-AAC6-9F56227E944B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Events", "..\Telerik.StarterKit.Widgets.Events\Telerik.StarterKit.Widgets.Events.csproj", "{D5911215-60BC-47EE-960C-6C56800D4017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.Sitefinity.Samples.Common", "Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj", "{CF03FB62-A8CC-42B4-9C81-87920C530D74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Facebook", "..\Telerik.StarterKit.Widgets.Facebook\Telerik.StarterKit.Widgets.Facebook.csproj", "{3ACCDA8B-2588-410A-8880-04BCC14FDE77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitefinityWebApp", "SitefinityWebApp\SitefinityWebApp.csproj", "{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.News", "..\Telerik.StarterKit.Widgets.News\Telerik.StarterKit.Widgets.News.csproj", "{A0CC580E-A8A1-4B7C-9402-328B51C92EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateImporter", "TemplateImporter\TemplateImporter.csproj", "{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Widgets.Twitter", "..\Telerik.StarterKit.Widgets.Twitter\Telerik.StarterKit.Widgets.Twitter.csproj", "{5C532A79-C354-47CD-AAC6-9F56227E944B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateImporter", "..\TemplateImporter\TemplateImporter.csproj", "{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +32,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release Pro|Any CPU.ActiveCfg = Release Pro|Any CPU
+		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release Pro|Any CPU.Build.0 = Release Pro|Any CPU
+		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
+		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.Build.0 = Release|Any CPU
+		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,18 +80,6 @@ Global
 		{5C532A79-C354-47CD-AAC6-9F56227E944B}.Release Pro|Any CPU.Build.0 = Release|Any CPU
 		{5C532A79-C354-47CD-AAC6-9F56227E944B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C532A79-C354-47CD-AAC6-9F56227E944B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.Build.0 = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release Pro|Any CPU.ActiveCfg = Release Pro|Any CPU
-		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release Pro|Any CPU.Build.0 = Release Pro|Any CPU
-		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC9B3F46-AF6A-43AD-A57C-75EE1CF1D5A3}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU

@@ -12,8 +12,6 @@
     <AssemblyName>Telerik.StarterKit.Widgets.Facebook</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,50 +40,12 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.Sitefinity">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.dll</HintPath>
+    <Reference Include="Telerik.Sitefinity, Version=6.3.5000.0, Culture=neutral, PublicKeyToken=b28c218413bdf563">
+      <HintPath>C:\Users\dabour\AppData\Local\Telerik.Sitefinity.SDK\Dependencies\Telerik.Sitefinity.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="Telerik.Sitefinity.ContentModules">
-      <HintPath>..\packages\Telerik.Sitefinity.Content.6.3.5000.0\lib\net40\Telerik.Sitefinity.ContentModules.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Ecommerce">
-      <HintPath>..\packages\Telerik.Sitefinity.Content.6.3.5000.0\lib\net40\Telerik.Sitefinity.Ecommerce.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Forums">
-      <HintPath>..\packages\Telerik.Sitefinity.Content.6.3.5000.0\lib\net40\Telerik.Sitefinity.Forums.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Model">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Personalization">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Personalization.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.RecurrentRules">
-      <HintPath>..\packages\Telerik.Sitefinity.Content.6.3.5000.0\lib\net40\Telerik.Sitefinity.RecurrentRules.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Resources">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Resources.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Search">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Search.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Services.Comments">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Services.Comments.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Services.Documents">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Services.Documents.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Services.Events">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Services.Events.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Services.Notifications">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Services.Notifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Services.Statistics">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Services.Statistics.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Utilities">
-      <HintPath>..\packages\Telerik.Sitefinity.Core.6.3.5000.0\lib\net40\Telerik.Sitefinity.Utilities.dll</HintPath>
+    <Reference Include="Telerik.Sitefinity.ContentModules, Version=6.3.5000.0, Culture=neutral, PublicKeyToken=b28c218413bdf563">
+      <HintPath>C:\Users\dabour\AppData\Local\Telerik.Sitefinity.SDK\Dependencies\Telerik.Sitefinity.ContentModules.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -93,9 +53,7 @@
     <Compile Include="SocialPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Resources\Scripts\SocialPluginDesigner.js" />
   </ItemGroup>
@@ -110,7 +68,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

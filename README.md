@@ -112,6 +112,18 @@ The project refers to the following NuGet packages:
 * Telerik.Web.UI.nupkg
 
 
+**TemplateImporter** library
+
+* Telerik.Sitefinity.Content.nupkg
+
+* Telerik.Web.UI.nupkg
+
+* Telerik.Sitefinity.Core.nupkg
+
+* OpenAccess.Core.nupkg
+
+
+
 ### Integrate the OpenAccess enhancer
 
 

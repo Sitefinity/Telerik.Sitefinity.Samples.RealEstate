@@ -50,7 +50,7 @@ The project refers to the following NuGet packages:
 
 **SitefinityWebApp** library
 
-* Telerik.Sitefinity.All
+* Telerik.Sitefinity.All.nupkg
 
 **Telerik.Sitefinity.Samples.Common** library
 
@@ -65,6 +65,8 @@ The project refers to the following NuGet packages:
 * Telerik.Sitefinity.Core.nupkg
 
 * OpenAccess.CodeFirst.nupkg
+ 
+* OpenAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
@@ -75,6 +77,8 @@ The project refers to the following NuGet packages:
 * Telerik.Sitefinity.Core.nupkg
 
 * OpenAccess.CodeFirst.nupkg
+
+* OpenAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 

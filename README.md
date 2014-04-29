@@ -14,7 +14,7 @@ This starter kit provides companies with a head start on their project. In addit
 
 ### Requirements
 
-* Sitefinity 6.3 license
+* Sitefinity license
 
 * .NET Framework 4
 
@@ -56,7 +56,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
@@ -66,7 +66,7 @@ The project refers to the following NuGet packages:
 
 * OpenAccess.CodeFirst.nupkg
  
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
@@ -78,7 +78,7 @@ The project refers to the following NuGet packages:
 
 * OpenAccess.CodeFirst.nupkg
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
@@ -88,7 +88,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
@@ -102,7 +102,7 @@ The project refers to the following NuGet packages:
 
 **Telerik.StarterKit.Widgets.News** library
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Core.nupkg
 
@@ -112,7 +112,7 @@ The project refers to the following NuGet packages:
 
 **Telerik.StarterKit.Widgets.Twitter** library
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Core.nupkg
 
@@ -129,7 +129,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
 

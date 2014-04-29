@@ -391,9 +391,8 @@ namespace TemplateImporter
 
         protected CultureInfo GetCurrentLanguage()
         {
-            var enableWidgetTranslations = Config.Get<PagesConfig>().EnableWidgetTranslations;
             var widgetCulture = CultureInfo.CurrentUICulture;
-            if (enableWidgetTranslations.HasValue == false || enableWidgetTranslations.Value == false || AppSettings.CurrentSettings.Multilingual == false)
+            if (AppSettings.CurrentSettings.Multilingual == false)
             {
                 widgetCulture = null;
             }

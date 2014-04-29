@@ -64,7 +64,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* OpenAccess.CodeFirst.nupkg
+* Telerik.DataAccess.Fluent.nupkg
  
 * Telerik.DataAccess.Core.nupkg
 
@@ -76,7 +76,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* OpenAccess.CodeFirst.nupkg
+* Telerik.DataAccess.Fluent.nupkg
 
 * Telerik.DataAccess.Core.nupkg
 

@@ -56,14 +56,6 @@
     <Reference Include="Telerik.OpenAccess.Runtime">
       <HintPath>..\SitefinityWebApp\packages\Telerik.DataAccess.Core.2014.1.403.2\lib\net40\Telerik.OpenAccess.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.OpenAccess.Web, Version=2013.3.1211.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342">
-      <HintPath>C:\Users\dabour\AppData\Local\Telerik.Sitefinity.SDK\Dependencies\Telerik.OpenAccess.Web.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Telerik.OpenAccess.Windows, Version=2013.3.1211.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342">
-      <HintPath>C:\Users\dabour\AppData\Local\Telerik.Sitefinity.SDK\Dependencies\Telerik.OpenAccess.Windows.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="Telerik.Sitefinity">
       <HintPath>..\SitefinityWebApp\packages\Telerik.Sitefinity.Core.7.0.5100.0\lib\net40\Telerik.Sitefinity.dll</HintPath>
     </Reference>

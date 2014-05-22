@@ -151,9 +151,6 @@
     <Reference Include="ServiceStack.Interfaces">
       <HintPath>packages\ServiceStack.Interfaces.4.0.14\lib\net40\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.ServiceInterface">
-      <HintPath>packages\Sitefinity.ServiceStack.3.9.56\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceStack.Text">
       <HintPath>packages\ServiceStack.Text.Signed.4.0.14\lib\net40\ServiceStack.Text.dll</HintPath>
     </Reference>

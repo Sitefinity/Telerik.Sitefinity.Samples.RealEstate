@@ -96,6 +96,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
             if (itemType == typeof(RealEstateItem))
                 return this.GetItem(id);
 
+            if (itemType == typeof(Comment))
+            {
+                return this.GetComment(id);
+            }
+
             return base.GetItem(itemType, id);
         }
 
@@ -119,6 +124,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
                 return SetExpressions(this.GetItems(), filterExpression, orderExpression, skip, take, ref totalCount);
             }
 
+            if (itemType == typeof(Comment))
+            {
+                return SetExpressions(this.GetComments(), filterExpression, orderExpression, skip, take, ref totalCount);
+            }
+
             throw GetInvalidItemTypeException(itemType, this.GetKnownTypes());
         }
 
@@ -138,6 +148,12 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
             if (itemType == typeof(RealEstateItem))
             {
                 this.DeleteItem((RealEstateItem)item);
+                return;
+            }
+
+            if (itemType == typeof(Comment))
+            {
+                this.Delete((Comment)item);
                 return;
             }
 
@@ -209,6 +225,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
 
         public override object GetItemOrDefault(Type itemType, Guid id)
         {
+            if (itemType == typeof(Comment))
+            {
+                return this.GetComments().Where(c => c.Id == id).FirstOrDefault();
+            }
+
             if (itemType == typeof(RealEstateItem))
                 return this.GetItems().Where(n => n.Id == id).FirstOrDefault();
 

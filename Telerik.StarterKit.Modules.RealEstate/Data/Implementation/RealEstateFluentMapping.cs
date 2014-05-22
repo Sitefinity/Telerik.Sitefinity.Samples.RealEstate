@@ -54,7 +54,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data.Implementation
             itemMapping.HasAssociation<Telerik.Sitefinity.Security.Model.PermissionsInheritanceMap>(p => p.PermissionChildren);
             itemMapping.HasProperty(p => p.CanInheritPermissions);
             itemMapping.HasAssociation(p => p.Urls).WithOppositeMember("parent", "Parent").ToColumn("content_id").IsDependent().IsManaged();
-            itemMapping.HasAssociation<Telerik.Sitefinity.Workflow.Model.Tracking.ApprovalTrackingRecordMap>(p => p.ApprovalTrackingRecordMap);
             CommonFluentMapping.MapILifecycleDataItemFields<RealEstateItem>(itemMapping, this.Context);
             mappings.Add(itemMapping);
         }

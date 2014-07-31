@@ -12,7 +12,6 @@ using Telerik.Sitefinity.GenericContent.Model;
 using Telerik.Sitefinity.Data;
 using Telerik.Sitefinity.Data.Linq;
 using Telerik.Sitefinity.Lifecycle;
-using Telerik.Sitefinity.Data;
 
 namespace Telerik.StarterKit.Modules.Agents.Data
 {

@@ -237,7 +237,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public AgentItem Edit(AgentItem item)
         {
             return (AgentItem)this.Lifecycle.Edit(item);
-            return this.Provider.Edit(item, this.Copy, this.GetAgents());
         }
 
         /// <summary>
@@ -248,7 +247,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public Guid GetCheckedOutBy(AgentItem item)
         {
             return this.Lifecycle.GetCheckedOutBy(item);
-            return this.Provider.GetCheckedOutBy(item, this.GetAgents());
         }
 
         /// <summary>
@@ -260,7 +258,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public AgentItem GetLive(AgentItem cnt)
         {
             return (AgentItem)(this.Lifecycle).GetLive(cnt);
-            return this.Provider.GetLiveBase(cnt);
         }
 
         /// <summary>
@@ -277,7 +274,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public AgentItem GetMaster(AgentItem cnt)
         {
             return (AgentItem)(this.Lifecycle).GetMaster(cnt);
-            return this.Provider.GetMasterBase(cnt);
         }
 
         /// <summary>
@@ -289,7 +285,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public AgentItem GetTemp(AgentItem cnt)
         {
             return (AgentItem)(this.Lifecycle).GetTemp(cnt);
-            return this.Provider.GetTempBase(cnt);
         }
 
         /// <summary>
@@ -300,7 +295,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public bool IsCheckedOut(AgentItem item)
         {
             return this.Lifecycle.IsCheckedOut(item);
-            return this.Provider.IsCheckedOut(item, this.GetAgents());
         }
 
         /// <summary>
@@ -312,7 +306,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public bool IsCheckedOutBy(AgentItem item, Guid userId)
         {
             return this.Lifecycle.IsCheckedOutBy(item, userId);
-            return this.Provider.IsCheckedOutBy(item, userId, this.GetAgents());
         }
 
         /// <summary>
@@ -322,7 +315,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public AgentItem Publish(AgentItem item)
         {
             return (AgentItem)this.Lifecycle.Publish(item);
-            return this.Provider.Publish(item, this.Copy, this.GetAgents());
         }
 
         /// <summary>
@@ -344,7 +336,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         public AgentItem Unpublish(AgentItem item)
         {
             return (AgentItem)this.Lifecycle.Unpublish(item);
-            return this.Provider.Unpublish(item, this.GetAgents());
         }
 
         #endregion

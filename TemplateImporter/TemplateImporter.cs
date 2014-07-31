@@ -129,7 +129,7 @@ namespace TemplateImporter
                     success = false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 success = false;
             }
@@ -158,7 +158,7 @@ namespace TemplateImporter
                 templateobject = (Template)obj;
                 reader.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
@@ -185,7 +185,7 @@ namespace TemplateImporter
 
                 }
             }
-            catch (System.Exception ex)
+            catch (System.Exception)
             {
             }
         }
@@ -261,33 +261,9 @@ namespace TemplateImporter
 
             pageTemplate.MasterPage = string.Concat("~/App_Data/Sitefinity/WebsiteTemplates/", pageTemplate.Name, "/App_Master/page.master");
 
-
-            var sibling = new Guid();
-
             for (int i = 0; i < templateobject.layout.placeholders.Length; i++)
             {
                 var placeholder = templateobject.layout.placeholders[i];
-
-                //var layout = new LayoutControl();
-
-                //var ctrlData = this.pageManager.CreateControl<TemplateControl>();
-
-
-                //if (placeholder.layoutwidget != null)
-                //{
-                //    layout.Layout = createPlaceholderLayout(placeholder.layoutwidget.columns, placeholder.id);
-
-                //}
-
-                //ctrlData.ObjectType = layout.GetType().FullName;
-                //ctrlData.PlaceHolder = "Body";
-                //ctrlData.SiblingId = sibling;
-                //sibling = ctrlData.Id;
-                //ctrlData.Caption = placeholder.id;
-
-                //this.pageManager.ReadProperties(layout, ctrlData);
-                //this.pageManager.SetControlId(pageTemplate, ctrlData);
-
 
                 for (int j = 0; j < placeholder.layoutwidget.columns.Length; j++)
                 {
@@ -411,7 +387,7 @@ namespace TemplateImporter
                 DirectoryInfo dir = new DirectoryInfo(FolderName);
                 dir.Delete(true);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }

@@ -1447,6 +1447,5 @@ namespace Telerik.StarterKit.Modules.Agents
         {
             get { return this["Unpublish"]; }
         }
-
     }
 }

@@ -522,17 +522,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
             };
             gridMode.ColumnsConfig.Add(addressColumn);
 
-            //DataColumnElement phoneNumberColumn = new DataColumnElement(gridMode.ColumnsConfig)
-            //{
-            //    Name = "Price",
-            //    HeaderText = "PhoneNumber",
-            //    ClientTemplate = "<span>{{PhoneNumber}}</span>",
-            //    HeaderCssClass = "sfRegular",
-            //    ItemCssClass = "sfRegular"
-            //};
-            //gridMode.ColumnsConfig.Add(phoneNumberColumn);
-
-
             var translationsColumn = new DynamicColumnElement(gridMode.ColumnsConfig)
             {
                 Name = "Translations",
@@ -542,6 +531,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
                 HeaderCssClass = "sfLanguagesCol",
                 ResourceClassId = typeof(Labels).Name
             };
+
             translationsColumn.GeneratorSettingsElement = new LanguagesColumnMarkupGeneratorElement(translationsColumn)
             {
                 LanguageSource = LanguageSource.Frontend,
@@ -726,12 +716,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
 
             backendContentView.ViewsConfig.Add(itemInsertDetailView);
 
-
-            //var previewExternalScripts = DefinitionsHelper.GetExtenalClientScripts(
-            //    "Telerik.Sitefinity.Versioning.Web.UI.Scripts.VersionHistoryExtender.js, Telerik.Sitefinity",
-            //    "OnDetailViewLoaded");
-
-
             var itemPreviewDetailView = new DetailFormViewElement(backendContentView.ViewsConfig)
             {
                 Title = "EditItem",
@@ -744,7 +728,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
                 ShowNavigation = false,
                 WebServiceBaseUrl = "~/Sitefinity/Services/Content/RealEstate.svc/",
                 UseWorkflow = false
-
             };
 
             backendContentView.ViewsConfig.Add(itemPreviewDetailView);
@@ -782,10 +765,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
             #endregion
 
             return backendContentView;
-
         }
-
-
 
         /// <summary>
         /// Creates the action menu widget element.
@@ -854,7 +834,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
         public static WidgetElement CreateActionMenuSeparator(
             ConfigElement parent,
             string name,
-            HtmlTextWriterTag WrapperTagKey,
+            HtmlTextWriterTag wrapperTagKey,
             string cssClass,
             string text,
             string resourceClassId)
@@ -862,7 +842,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI
             return new LiteralWidgetElement(parent)
             {
                 Name = name,
-                WrapperTagKey = WrapperTagKey,
+                WrapperTagKey = wrapperTagKey,
                 CssClass = cssClass,
                 Text = text,
                 ResourceClassId = resourceClassId,

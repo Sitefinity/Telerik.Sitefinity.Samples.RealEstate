@@ -12,13 +12,12 @@ namespace Telerik.StarterKit.Modules.Agents.Data
     {
         public AgentsFluentMetadataSource()
             : base(null)
-        { }
-
+        { 
+        }
 
         public AgentsFluentMetadataSource(IDatabaseMappingContext context)
             : base(context)
         {
-
         }
 
         protected override IList<IOpenAccessFluentMapping> BuildCustomMappings()
@@ -26,7 +25,6 @@ namespace Telerik.StarterKit.Modules.Agents.Data
             var sitefinityMappings = base.BuildCustomMappings();
             sitefinityMappings.Add(new AgentsFluentMapping(this.Context));
             return sitefinityMappings;
-
         }
     }
 }

@@ -26,14 +26,13 @@ namespace Telerik.StarterKit.Widgets.Events
     [ControlDesigner(typeof(EventsCalendarDesigner))]
     public class EventsCalendar : SimpleView
     {
-
-        private EventsManager m_EventsManager;
-        private PageManager m_PageManager;
-        private TaxonomyManager m_TaxonomyManager;
-        private PageNode m_CurrentPage;
-        private string m_CurrentPageUrl;
-        private Event m_CurrentEventItem;
-        private List<Event> m_DataSource;
+        private EventsManager eventsManager;
+        private PageManager pageManager;
+        private TaxonomyManager taxonomyManager;
+        private PageNode currentPage;
+        private string currentPageUrl;
+        private Event currentEventItem;
+        private List<Event> dataSource;
 
         #region Constants
 
@@ -63,11 +62,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_EventsManager == null)
+                if (this.eventsManager == null)
                 {
-                    this.m_EventsManager = EventsManager.GetManager();
+                    this.eventsManager = EventsManager.GetManager();
                 }
-                return this.m_EventsManager;
+                return this.eventsManager;
             }
         }
 
@@ -75,11 +74,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_PageManager == null)
+                if (this.pageManager == null)
                 {
-                    this.m_PageManager = PageManager.GetManager();
+                    this.pageManager = PageManager.GetManager();
                 }
-                return this.m_PageManager;
+                return this.pageManager;
             }
         }
 
@@ -87,11 +86,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_TaxonomyManager == null)
+                if (this.taxonomyManager == null)
                 {
-                    this.m_TaxonomyManager = TaxonomyManager.GetManager();
+                    this.taxonomyManager = TaxonomyManager.GetManager();
                 }
-                return this.m_TaxonomyManager;
+                return this.taxonomyManager;
             }
         }
 
@@ -99,14 +98,14 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_CurrentPage == null)
+                if (this.currentPage == null)
                 {
                     SiteMapNode currentNode = SiteMapBase.GetCurrentProvider().CurrentNode;
                     Guid currentPageId = new Guid(currentNode.Key);
-                    this.m_CurrentPage = this.PageManager.GetPageNode(currentPageId);
+                    this.currentPage = this.PageManager.GetPageNode(currentPageId);
                 }
 
-                return this.m_CurrentPage;
+                return this.currentPage;
             }
         }
 
@@ -114,11 +113,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (string.IsNullOrEmpty(this.m_CurrentPageUrl))
+                if (string.IsNullOrEmpty(this.currentPageUrl))
                 {
-                    this.m_CurrentPageUrl = this.CurrentPage.GetFullUrl(Thread.CurrentThread.CurrentCulture, false);
+                    this.currentPageUrl = this.CurrentPage.GetFullUrl(Thread.CurrentThread.CurrentCulture, false);
                 }
-                return this.m_CurrentPageUrl;
+                return this.currentPageUrl;
             }
         }
 
@@ -183,24 +182,24 @@ namespace Telerik.StarterKit.Widgets.Events
             }
         }
 
-        void Calendar_DataBinding(object sender, EventArgs e)
+        private void Calendar_DataBinding(object sender, EventArgs e)
         {
-            m_DataSource = this.GetEventsListDataSource();
+            dataSource = this.GetEventsListDataSource();
         }
 
-        void Calendar_VisibleMonthChanged(object sender, MonthChangedEventArgs e)
+        private void Calendar_VisibleMonthChanged(object sender, MonthChangedEventArgs e)
         {
             this.Calendar.DataBind();
         }
 
-        void Calendar_DayRender(object sender, DayRenderEventArgs e)
+        private void Calendar_DayRender(object sender, DayRenderEventArgs e)
         {
             if (e.Day.IsOtherMonth)
             {
                 return;
             }
 
-            bool eventsExist = m_DataSource.Where(eI => eI.EventStart.Day == e.Day.Date.Day).Count() > 0;
+            bool eventsExist = dataSource.Where(eI => eI.EventStart.Day == e.Day.Date.Day).Count() > 0;
 
             if (!eventsExist)
             {

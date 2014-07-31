@@ -10,11 +10,11 @@ using Telerik.Sitefinity.Web;
 
 public partial class Templates_Sitemap : System.Web.UI.UserControl
 {
-    private PageManager m_PageManager;
+    private PageManager pageManager;
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        m_PageManager = new PageManager();
+        pageManager = new PageManager();
     }
 
     protected void lvPages_ItemDataBound(object sender, ListViewItemEventArgs e)
@@ -26,9 +26,8 @@ public partial class Templates_Sitemap : System.Web.UI.UserControl
 
         PagesConfig pagesConfig = Config.Get<PagesConfig>();
         
-
         PageSiteNode node = (PageSiteNode)e.Item.DataItem;
-        PageNode page = m_PageManager.GetPageNode(node.Id);
+        PageNode page = pageManager.GetPageNode(node.Id);
         if (!node.ShowInNavigation || string.IsNullOrEmpty(node.Title))
         {
             e.Item.Visible = false;

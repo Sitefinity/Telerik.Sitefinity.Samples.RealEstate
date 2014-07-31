@@ -37,6 +37,5 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI.Public.Designers
                 return Config.Get<ControlsConfig>().ResourcesAssemblyInfo;
             }
         }
-
     }
 }

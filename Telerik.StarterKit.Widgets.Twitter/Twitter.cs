@@ -119,8 +119,7 @@ namespace Telerik.StarterKit.Widgets.Twitter
         }
 
         protected override void InitializeControls(GenericContainer container)
-        {
-            
+        {           
         }
 
         protected override void CreateChildControls()

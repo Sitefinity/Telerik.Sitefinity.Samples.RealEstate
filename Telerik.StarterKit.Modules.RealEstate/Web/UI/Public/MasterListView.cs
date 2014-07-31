@@ -65,11 +65,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_PageManager == null)
+                if (this.pageManager == null)
                 {
-                    this.m_PageManager = PageManager.GetManager();
+                    this.pageManager = PageManager.GetManager();
                 }
-                return this.m_PageManager;
+                return this.pageManager;
             }
         }
 
@@ -77,17 +77,17 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_CurrentPage == null)
+                if (this.currentPage == null)
                 {
                     SiteMapNode currentNode = SiteMapBase.GetCurrentProvider().CurrentNode;
                     if (currentNode != null)
                     {
                         Guid currentPageId = new Guid(currentNode.Key);
-                        this.m_CurrentPage = this.PageManager.GetPageNode(currentPageId);
+                        this.currentPage = this.PageManager.GetPageNode(currentPageId);
                     }
                 }
 
-                return this.m_CurrentPage;
+                return this.currentPage;
             }
         }
         #endregion
@@ -276,7 +276,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             lbnItemPerPage_Twentyseven.Click += new EventHandler(ItemPerPageButtonsClicked);
 
             lbnSortBy_Price.Click += new EventHandler(SortByButtonsClicked);
-            //lbnSortBy_Location.Click += new EventHandler(SortByButtonsClicked);
 
             if (!Page.IsPostBack)
             {
@@ -308,24 +307,8 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
                     break;
             }
 
-            //if (sortBy.Equals("location", StringComparison.OrdinalIgnoreCase))
-            //{
-            //    lbnSortBy_Price.CssClass = "arrow-up";
-
-            //    if (sortDir.Equals("desc", StringComparison.OrdinalIgnoreCase))
-            //    {
-            //        lbnSortBy_Location.CssClass = "arrow-down current";
-            //    }
-            //    else
-            //    {
-            //        lbnSortBy_Location.CssClass = "arrow-up current";
-            //    }
-            //}
-            //else 
             if (sortBy.Equals("price", StringComparison.OrdinalIgnoreCase))
             {
-                //lbnSortBy_Location.CssClass = "arrow-up";
-
                 if (sortDir.Equals("desc", StringComparison.OrdinalIgnoreCase))
                 {
                     lbnSortBy_Price.CssClass = "arrow-down current";
@@ -416,7 +399,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             }
         }
 
-        void ViewTypeButtonsClicked(object sender, EventArgs e)
+        private void ViewTypeButtonsClicked(object sender, EventArgs e)
         {
             LinkButton lbn = sender as LinkButton;
             if (lbn == null)
@@ -452,7 +435,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             }
         }
 
-        void ItemPerPageButtonsClicked(object sender, EventArgs e)
+        private void ItemPerPageButtonsClicked(object sender, EventArgs e)
         {
             LinkButton lbn = sender as LinkButton;
             if (lbn == null)
@@ -472,7 +455,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             this.BindItems();
         }
 
-        void SortByButtonsClicked(object sender, EventArgs e)
+        private void SortByButtonsClicked(object sender, EventArgs e)
         {
             LinkButton lbn = sender as LinkButton;
             if (lbn == null)
@@ -575,8 +558,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             return false;
         }
 
-
-        void ItemsListControl_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void ItemsListControl_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -604,31 +586,9 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             FeaturesList.ItemDataBound += new EventHandler<RadListViewItemEventArgs>(FeaturesList_ItemDataBound);
             FeaturesList.DataSource = item.GetTaxons<FlatTaxon>(TaxonType.Features);
             FeaturesList.DataBind();
-
-            //HtmlGenericControl photoDiv = (HtmlGenericControl)e.Item.FindControl("photoDiv");
-            
-            //var album = App.Prepare().WorkWith().Albums().Where(a => a.Title == "Items").Get().FirstOrDefault();
-            //if (album == null)
-            //{
-            //    return;
-            //}
-
-            //var image = album.Images.Where(i => i.Title == item.Title && i.Status == Sitefinity.GenericContent.Model.ContentLifecycleStatus.Live).SingleOrDefault();
-            //if (image == null)
-            //{
-            //    return;
-            //}
-
-            //photoDiv.InnerHtml = string.Format("<img src='{0}{1}' />", librariesManager.GetItemUrl(image), image.Extension);
-
-            ////Telerik.Sitefinity.Web.UI.ContentUI.DetailsViewHyperLink link1 = (Telerik.Sitefinity.Web.UI.ContentUI.DetailsViewHyperLink)e.Item.FindControl("DetailsViewHyperLink1");
-            ////Telerik.Sitefinity.Web.UI.ContentUI.DetailsViewHyperLink link2 = (Telerik.Sitefinity.Web.UI.ContentUI.DetailsViewHyperLink)e.Item.FindControl("DetailsViewHyperLink2");
-
-            ////link1.NavigateUrl = link1.NavigateUrl + "?popup=true";
-            ////link2.NavigateUrl = link2.NavigateUrl + "?popup=true";
         }
 
-        void FeaturesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void FeaturesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -640,7 +600,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             Literal ltrFeature = (Literal)e.Item.FindControl("ltrFeature");
             ltrFeature.Text = feature.Title;
         }
-
 
         /// <summary>
         /// Configures the pager.
@@ -669,14 +628,14 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         private RealEstateManager manager;
         internal const string layoutTemplateName = "Telerik.StarterKit.Modules.RealEstate.Web.UI.Public.Resources.MasterListView.ascx";
         private ITemplate layoutTemplate;
-        Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
-        bool isThumbView;
-        bool? newViewTypeIsThumbView;
-        int? newItemsPerPage;
-        string newSortBy;
-        string newSortDir;
-        private PageManager m_PageManager;
-        private PageNode m_CurrentPage;
+        private Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
+        private bool isThumbView;
+        private bool? newViewTypeIsThumbView;
+        private int? newItemsPerPage;
+        private string newSortBy;
+        private string newSortDir;
+        private PageManager pageManager;
+        private PageNode currentPage;
         #endregion
     }
 }

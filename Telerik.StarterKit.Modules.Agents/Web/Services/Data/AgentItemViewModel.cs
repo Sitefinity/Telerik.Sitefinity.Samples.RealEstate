@@ -32,8 +32,7 @@ namespace Telerik.StarterKit.Modules.Agents.Web.Services.Data
             this.agentEmail = contentItem.Email;
             this.agentPhoneNumber = contentItem.PhoneNumber;
             this.agentAddress = contentItem.Address;
-            this.agentPostalCode = contentItem.PostalCode;
-            
+            this.agentPostalCode = contentItem.PostalCode;            
         }
 
         #endregion

@@ -6,9 +6,8 @@ namespace TemplateImporter.Localization
     public class TemplateImporterResources : Resource
     {
         public TemplateImporterResources()
-        { }
-
-
+        { 
+        }
 
         [ResourceEntry("TemplateImporterViewTitle",
                 Value = "TemplateImporter",

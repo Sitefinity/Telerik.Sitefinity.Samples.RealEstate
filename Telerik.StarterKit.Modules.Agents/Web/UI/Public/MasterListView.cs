@@ -209,7 +209,7 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI.Public
             }
         }
 
-        void AgentsListControl_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void AgentsListControl_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -279,7 +279,7 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI.Public
         private LibrariesManager libManager;
         internal const string layoutTemplateName = "Telerik.StarterKit.Modules.Agents.Web.UI.Public.Resources.MasterListView.ascx";
         private ITemplate layoutTemplate;
-        Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
+        private Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
         #endregion
     }
 }

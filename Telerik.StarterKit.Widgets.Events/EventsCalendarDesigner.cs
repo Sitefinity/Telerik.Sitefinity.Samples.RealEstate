@@ -84,6 +84,5 @@ namespace Telerik.StarterKit.Widgets.Events
         }
 
         #endregion
-
     }
 }

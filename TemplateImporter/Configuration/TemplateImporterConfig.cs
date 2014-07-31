@@ -22,6 +22,4 @@ namespace TemplateImporter.Configuration
             //contentViewControls.Add(TemplateImporterDefinitions.DefineTemplateImporterBackendContentView(contentViewControls));
         }
     }
-
-
 }

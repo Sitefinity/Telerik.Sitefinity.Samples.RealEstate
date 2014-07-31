@@ -83,6 +83,5 @@ namespace Telerik.StarterKit.Widgets.Twitter
         }
 
         #endregion
-
     }
 }

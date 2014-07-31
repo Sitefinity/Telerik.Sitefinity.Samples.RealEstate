@@ -147,7 +147,7 @@ namespace Telerik.StarterKit.Modules.Agents.Data
         /// </summary>
         /// <value>The default provider delegate.</value>
         protected override GetDefaultProvider DefaultProviderDelegate
-        {            
+        {
             get { return () => Config.Get<AgentsConfig>().DefaultProvider; }
         }
 
@@ -367,7 +367,7 @@ namespace Telerik.StarterKit.Modules.Agents.Data
                 return this.CheckOut(agent);
             throw new NotSupportedException();
         }
-        
+
         /// <summary>
         /// Copy one item to another for the uses of content lifecycle management
         /// </summary>
@@ -380,7 +380,7 @@ namespace Telerik.StarterKit.Modules.Agents.Data
             if (destination == null) throw new ArgumentNullException("destination");
             var agentSource = source as AgentItem;
             var agentDestination = destination as AgentItem;
-            if (agentSource ==null || agentDestination==null) throw new ArgumentException("Source and destination must be of the same type");
+            if (agentSource == null || agentDestination == null) throw new ArgumentException("Source and destination must be of the same type");
             this.Copy(agentSource, agentDestination);
         }
 
@@ -525,7 +525,7 @@ namespace Telerik.StarterKit.Modules.Agents.Data
 
         #endregion
 
-        #endregion             
+        #endregion
 
         /// <summary>
         /// Gets the lifecycle decorator

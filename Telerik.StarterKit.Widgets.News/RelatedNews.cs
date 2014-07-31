@@ -27,13 +27,12 @@ namespace Telerik.StarterKit.Widgets.News
     [ControlDesigner(typeof(RelatedNewsDesigner))]
     public class RelatedNews : SimpleView, ICustomWidgetVisualization
     {
-
-        private NewsManager m_NewsManager;
-        private PageManager m_PageManager;
-        private TaxonomyManager m_TaxonomyManager;
-        private PageNode m_CurrentPage;
-        private string m_CurrentPageUrl;
-        private NewsItem m_CurrentNewsItem;
+        private NewsManager newsManager;
+        private PageManager pageManager;
+        private TaxonomyManager taxonomyManager;
+        private PageNode currentPage;
+        private string currentPageUrl;
+        private NewsItem currentNewsItem;
 
         #region Constants
 
@@ -72,11 +71,11 @@ namespace Telerik.StarterKit.Widgets.News
         {
             get
             {
-                if (this.m_NewsManager == null)
+                if (this.newsManager == null)
                 {
-                    this.m_NewsManager = NewsManager.GetManager();
+                    this.newsManager = NewsManager.GetManager();
                 }
-                return this.m_NewsManager;
+                return this.newsManager;
             }
         }
 
@@ -84,11 +83,11 @@ namespace Telerik.StarterKit.Widgets.News
         {
             get
             {
-                if (this.m_PageManager == null)
+                if (this.pageManager == null)
                 {
-                    this.m_PageManager = PageManager.GetManager();
+                    this.pageManager = PageManager.GetManager();
                 }
-                return this.m_PageManager;
+                return this.pageManager;
             }
         }
 
@@ -96,11 +95,11 @@ namespace Telerik.StarterKit.Widgets.News
         {
             get
             {
-                if (this.m_TaxonomyManager == null)
+                if (this.taxonomyManager == null)
                 {
-                    this.m_TaxonomyManager = TaxonomyManager.GetManager();
+                    this.taxonomyManager = TaxonomyManager.GetManager();
                 }
-                return this.m_TaxonomyManager;
+                return this.taxonomyManager;
             }
         }
 
@@ -108,14 +107,14 @@ namespace Telerik.StarterKit.Widgets.News
         {
             get
             {
-                if (this.m_CurrentPage == null)
+                if (this.currentPage == null)
                 {
                     SiteMapNode currentNode = SiteMapBase.GetCurrentProvider().CurrentNode;
                     Guid currentPageId = new Guid(currentNode.Key);
-                    this.m_CurrentPage = this.PageManager.GetPageNode(currentPageId);
+                    this.currentPage = this.PageManager.GetPageNode(currentPageId);
                 }
 
-                return this.m_CurrentPage;
+                return this.currentPage;
             }
         }
 
@@ -123,11 +122,11 @@ namespace Telerik.StarterKit.Widgets.News
         {
             get
             {
-                if (string.IsNullOrEmpty(this.m_CurrentPageUrl))
+                if (string.IsNullOrEmpty(this.currentPageUrl))
                 {
-                    this.m_CurrentPageUrl = this.CurrentPage.GetFullUrl();
+                    this.currentPageUrl = this.CurrentPage.GetFullUrl();
                 }
-                return this.m_CurrentPageUrl;
+                return this.currentPageUrl;
             }
         }
 
@@ -135,15 +134,14 @@ namespace Telerik.StarterKit.Widgets.News
         {
             get
             {
-                if (this.m_CurrentNewsItem == null)
+                if (this.currentNewsItem == null)
                 {
-                    this.m_CurrentNewsItem = this.ResolveDetailItemFromUrl();
+                    this.currentNewsItem = this.ResolveDetailItemFromUrl();
                 }
 
-                return this.m_CurrentNewsItem;
+                return this.currentNewsItem;
             }
         }
-
 
         #endregion
 
@@ -210,7 +208,7 @@ namespace Telerik.StarterKit.Widgets.News
             this.IsEmpty = this.NumberOfNewsToShow < 1;
         }
 
-        void NewsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void NewsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -233,7 +231,6 @@ namespace Telerik.StarterKit.Widgets.News
 
             List<NewsItem> dataSource = new List<NewsItem>(this.NumberOfNewsToShow);
             List<NewsItem> allNewsWithSameCategories = new List<NewsItem>();
-
 
             TrackedList<Guid> categoryIds = (TrackedList<Guid>)this.CurrentNewsItem.GetValue("Category");
             foreach (Guid id in categoryIds)
@@ -279,9 +276,7 @@ namespace Telerik.StarterKit.Widgets.News
             return result;
         }
 
-
         #endregion
-
         #region ICustomWidgetVisualization Members
 
         public bool IsEmpty

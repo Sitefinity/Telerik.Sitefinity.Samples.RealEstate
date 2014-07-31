@@ -739,7 +739,6 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI
                 ShowNavigation = false,
                 WebServiceBaseUrl = "~/Sitefinity/Services/Content/Agents.svc/",
                 UseWorkflow = false
-
             };
 
             backendContentView.ViewsConfig.Add(agentsPreviewDetailView);
@@ -777,7 +776,6 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI
             #endregion
 
             return backendContentView;
-
         }
 
         /// <summary>
@@ -847,7 +845,7 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI
         public static WidgetElement CreateActionMenuSeparator(
             ConfigElement parent,
             string name,
-            HtmlTextWriterTag WrapperTagKey,
+            HtmlTextWriterTag wrapperTagKey,
             string cssClass,
             string text,
             string resourceClassId)
@@ -855,7 +853,7 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI
             return new LiteralWidgetElement(parent)
             {
                 Name = name,
-                WrapperTagKey = WrapperTagKey,
+                WrapperTagKey = wrapperTagKey,
                 CssClass = cssClass,
                 Text = text,
                 ResourceClassId = resourceClassId,
@@ -1212,7 +1210,6 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI
             }
 
             #endregion
-
         }
 
         #region Constants

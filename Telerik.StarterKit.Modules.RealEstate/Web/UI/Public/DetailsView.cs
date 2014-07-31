@@ -37,10 +37,10 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_AgentsManager == null)
-                    this.m_AgentsManager = AgentsManager.GetManager();
+                if (this.agentsManager == null)
+                    this.agentsManager = AgentsManager.GetManager();
 
-                return this.m_AgentsManager;
+                return this.agentsManager;
             }
         }
 
@@ -452,7 +452,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
 
         #endregion
 
-        void FeaturesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void FeaturesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -465,7 +465,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             ltrFeature.Text = feature.Title;
         }
 
-        void RoomsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void RoomsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -482,8 +482,8 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
 
         internal const string layoutTemplateName = "Telerik.StarterKit.Modules.RealEstate.Web.UI.Public.Resources.DetailsView.ascx";
         private ITemplate layoutTemplate;
-        Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
-        private AgentsManager m_AgentsManager;
+        private Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
+        private AgentsManager agentsManager;
         #endregion
 
         private Control FindControlRecursive(string ID)

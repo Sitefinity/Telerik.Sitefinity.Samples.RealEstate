@@ -53,16 +53,13 @@ namespace TemplateImporter
                 ErrorLabel.ForeColor = Color.Red;
             }
 
-
             else if (RadUploadControl.UploadedFiles.Count == 1)
             {
-
                 string physicalPath = AppDomain.CurrentDomain.BaseDirectory;
                 var templateteImporter = new TemplateImporter(
                     RadUploadControl.UploadedFiles[0].GetName(),
                     physicalPath
                 );
-
 
                 bool success = templateteImporter.Import();
 

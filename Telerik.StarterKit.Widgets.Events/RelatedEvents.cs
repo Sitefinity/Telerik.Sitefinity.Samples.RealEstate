@@ -28,13 +28,12 @@ namespace Telerik.StarterKit.Widgets.Events
     [ControlDesigner(typeof(RelatedEventsDesigner))]
     public class RelatedEvents : SimpleView, ICustomWidgetVisualization
     {
-
-        private EventsManager m_EventsManager;
-        private PageManager m_PageManager;
-        private TaxonomyManager m_TaxonomyManager;
-        private PageNode m_CurrentPage;
-        private string m_CurrentPageUrl;
-        private Event m_CurrentEventItem;
+        private EventsManager eventsManager;
+        private PageManager pageManager;
+        private TaxonomyManager taxonomyManager;
+        private PageNode currentPage;
+        private string currentPageUrl;
+        private Event currentEventItem;
 
         #region Constants
 
@@ -73,11 +72,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_EventsManager == null)
+                if (this.eventsManager == null)
                 {
-                    this.m_EventsManager = EventsManager.GetManager();
+                    this.eventsManager = EventsManager.GetManager();
                 }
-                return this.m_EventsManager;
+                return this.eventsManager;
             }
         }
 
@@ -85,11 +84,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_PageManager == null)
+                if (this.pageManager == null)
                 {
-                    this.m_PageManager = PageManager.GetManager();
+                    this.pageManager = PageManager.GetManager();
                 }
-                return this.m_PageManager;
+                return this.pageManager;
             }
         }
 
@@ -97,11 +96,12 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_TaxonomyManager == null)
+                if (this.taxonomyManager == null)
                 {
-                    this.m_TaxonomyManager = TaxonomyManager.GetManager();
+                    this.taxonomyManager = TaxonomyManager.GetManager();
                 }
-                return this.m_TaxonomyManager;
+
+                return this.taxonomyManager;
             }
         }
 
@@ -109,14 +109,14 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_CurrentPage == null)
+                if (this.currentPage == null)
                 {
                     SiteMapNode currentNode = SiteMapBase.GetCurrentProvider().CurrentNode;
                     Guid currentPageId = new Guid(currentNode.Key);
-                    this.m_CurrentPage = this.PageManager.GetPageNode(currentPageId);
+                    this.currentPage = this.PageManager.GetPageNode(currentPageId);
                 }
 
-                return this.m_CurrentPage;
+                return this.currentPage;
             }
         }
 
@@ -124,11 +124,11 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (string.IsNullOrEmpty(this.m_CurrentPageUrl))
+                if (string.IsNullOrEmpty(this.currentPageUrl))
                 {
-                    this.m_CurrentPageUrl = this.CurrentPage.GetFullUrl(Thread.CurrentThread.CurrentCulture, false);
+                    this.currentPageUrl = this.CurrentPage.GetFullUrl(Thread.CurrentThread.CurrentCulture, false);
                 }
-                return this.m_CurrentPageUrl;
+                return this.currentPageUrl;
             }
         }
 
@@ -136,12 +136,12 @@ namespace Telerik.StarterKit.Widgets.Events
         {
             get
             {
-                if (this.m_CurrentEventItem == null)
+                if (this.currentEventItem == null)
                 {
-                    this.m_CurrentEventItem = this.ResolveDetailItemFromUrl();
+                    this.currentEventItem = this.ResolveDetailItemFromUrl();
                 }
 
-                return this.m_CurrentEventItem;
+                return this.currentEventItem;
             }
         }
 
@@ -211,7 +211,7 @@ namespace Telerik.StarterKit.Widgets.Events
             this.IsEmpty = this.NumberOfEventsToShow < 1;
         }
 
-        void EventsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void EventsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {

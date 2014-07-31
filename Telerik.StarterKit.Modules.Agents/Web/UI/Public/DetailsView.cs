@@ -254,16 +254,16 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI.Public
                 }
             }
         }
-        private Control FindControlRecursive(string ID)
+        private Control FindControlRecursive(string iD)
         {
-            return this.FindControlRecursive(this, ID);
+            return this.FindControlRecursive(this, iD);
         }
-        internal Control FindControlRecursive(Control searcher, string ID)
+        internal Control FindControlRecursive(Control searcher, string iD)
         {
             //First search the same naming container:
             if (searcher.NamingContainer != null)
             {
-                Control searched = searcher.NamingContainer.FindControl(ID);
+                Control searched = searcher.NamingContainer.FindControl(iD);
                 if (searched != null)
                 {
                     return searched;
@@ -280,24 +280,24 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI.Public
                 root = searcher.Page;
             }
 
-            Control control = root.FindControl(ID);
+            Control control = root.FindControl(iD);
             if (control != null)
             {
                 return control;
             }
 
-            control = searcher.Page.FindControl(ID);
+            control = searcher.Page.FindControl(iD);
             if (control != null)
             {
                 return control;
             }
 
-            if (searcher.UniqueID == ID || searcher.ClientID == ID)
+            if (searcher.UniqueID == iD || searcher.ClientID == iD)
             {
                 return searcher;
             }
 
-            return FindControlRecursive(ID, root);
+            return FindControlRecursive(iD, root);
         }
         private Control FindControlRecursive(string ID, Control root)
         {
@@ -331,7 +331,7 @@ namespace Telerik.StarterKit.Modules.Agents.Web.UI.Public
 
         internal const string layoutTemplateName = "Telerik.StarterKit.Modules.Agents.Web.UI.Public.Resources.DetailsView.ascx";
         private ITemplate layoutTemplate;
-        Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
+        private Telerik.Sitefinity.Modules.Libraries.LibrariesManager librariesManager = new Sitefinity.Modules.Libraries.LibrariesManager();
         private readonly string webServiceUrl = VirtualPathUtility.ToAbsolute("~/Sitefinity/Services/Content/Mailer.svc/");
         #endregion
     }

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Telerik.Sitefinity.Web.UI;
-using Telerik.Sitefinity.Localization;
-using Telerik.Sitefinity.Modules.GenericContent;
-using Telerik.Sitefinity.Web.Utilities;
-using Telerik.Sitefinity.Modules.Pages.PropertyPersisters;
 using System.Web.UI;
-using Telerik.Sitefinity.Web.UI.ControlDesign;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using Telerik.Sitefinity.Localization;
+using Telerik.Sitefinity.Modules.GenericContent;
+using Telerik.Sitefinity.Modules.Pages.PropertyPersisters;
+using Telerik.Sitefinity.Web.UI;
+using Telerik.Sitefinity.Web.UI.ControlDesign;
+using Telerik.Sitefinity.Web.Utilities;
 
 namespace Telerik.StarterKit.Widgets.Facebook
 {
@@ -138,9 +138,7 @@ namespace Telerik.StarterKit.Widgets.Facebook
                 {
                     this.Visible = false;
                 }
-            }
-
-            
+            }        
         }
 
         #endregion

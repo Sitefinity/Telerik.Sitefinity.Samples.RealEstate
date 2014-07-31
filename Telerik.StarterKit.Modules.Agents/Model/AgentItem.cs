@@ -125,7 +125,6 @@ namespace Telerik.StarterKit.Modules.Agents.Model
             {
                 this.approvalTrackingRecordMap = value;
             }
-
         }
 
         /// <summary>
@@ -432,6 +431,5 @@ namespace Telerik.StarterKit.Modules.Agents.Model
         }
 
         #endregion
-
     }
 }

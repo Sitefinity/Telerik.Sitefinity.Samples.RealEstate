@@ -125,7 +125,7 @@ namespace Telerik.StarterKit.Modules.Agents
         {
             SecurityConfig securityConfig = initializer.Context.GetConfig<SecurityConfig>();
             ConfigElementDictionary<string, Permission> permissionSetConfig = securityConfig.Permissions;
-            ConfigElementDictionary<string, CustomPermissionsDisplaySettingsConfig> CustomPermissionsDisplaySettings = securityConfig.CustomPermissionsDisplaySettings;
+            ConfigElementDictionary<string, CustomPermissionsDisplaySettingsConfig> customPermissionsDisplaySettings = securityConfig.CustomPermissionsDisplaySettings;
 
             //Add the set
             if (!permissionSetConfig.ContainsKey(AgentsConstants.Security.PermissionSetName))
@@ -190,13 +190,13 @@ namespace Telerik.StarterKit.Modules.Agents
             }
 
             //Custom UI views
-            if (!CustomPermissionsDisplaySettings.ContainsKey(AgentsConstants.Security.PermissionSetName))
+            if (!customPermissionsDisplaySettings.ContainsKey(AgentsConstants.Security.PermissionSetName))
             {
-                var agentsCustomSet = new CustomPermissionsDisplaySettingsConfig(CustomPermissionsDisplaySettings)
+                var agentsCustomSet = new CustomPermissionsDisplaySettingsConfig(customPermissionsDisplaySettings)
                 {
                     SetName = AgentsConstants.Security.PermissionSetName
                 };
-                CustomPermissionsDisplaySettings.Add(agentsCustomSet);
+                customPermissionsDisplaySettings.Add(agentsCustomSet);
 
                 var agentsCustomActions = new SecuredObjectCustomPermissionSet(agentsCustomSet.SecuredObjectCustomPermissionSets) { TypeName = typeof(AgentItem).FullName };
                 agentsCustomSet.SecuredObjectCustomPermissionSets.Add(agentsCustomActions);

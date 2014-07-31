@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.UI;
+using Telerik.Sitefinity.Web.UI;
 using Telerik.Sitefinity.Web.UI.ControlDesign;
 using Telerik.Sitefinity.Web.UI.Fields;
-using Telerik.Sitefinity.Web.UI;
-using System.Web.UI;
 
 namespace Telerik.StarterKit.Widgets.Facebook
 {
@@ -105,6 +105,5 @@ namespace Telerik.StarterKit.Widgets.Facebook
         }
 
         #endregion
-
     }
 }

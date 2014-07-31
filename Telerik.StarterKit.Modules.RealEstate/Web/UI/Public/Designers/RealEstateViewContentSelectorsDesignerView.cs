@@ -36,43 +36,46 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public.Designers
 
         protected override void InitializeControls(Sitefinity.Web.UI.GenericContainer container)
         {
-            //base.InitializeControls(container);
-
-            ////this.ContentSelector.ServiceUrl = "~/Sitefinity/Services/Content/RealEstate.svc";
-            //this.FilterSelector.SetTaxonomyId("Types", RealEstateModule.TypesTaxonomyId);
-
             if (this.ChooseAllText != null)
             {
                 this.RadioChoiceAll.Text = this.ChooseAllText;
             }
+
             if (this.ChooseSingleText != null)
             {
                 this.RadioChoiceSingle.Text = this.ChooseSingleText;
             }
+
             if (this.ChooseSimpleFilterText != null)
             {
                 this.RadioChoiceSimpleFilter.Text = this.ChooseSimpleFilterText;
             }
+
             if (this.ChooseAdvancedFilterText != null)
             {
                 this.RadioChoiceAdvancedFilter.Text = this.ChooseAdvancedFilterText;
             }
+
             if (this.ContentTitleText != null)
             {
                 this.ChoicesTitleLiteral.Text = this.ContentTitleText;
             }
+
             if (this.SingleSelectorButtonText != null)
             {
                 this.SelectContentButton.Text = this.SingleSelectorButtonText;
             }
+
             if (this.SelectedContentTitleText != null)
             {
                 this.SelectedContentLabel.Text = this.SelectedContentTitleText;
             }
+
             else
             {
                 this.SelectedContentLabel.Style.Add("display", "none");
             }
+
             this.ContentSelector.ServiceUrl = "~/Sitefinity/Services/Content/RealEstate.svc/";
             string str = "Visible == true AND Status == Live";
             string uICulture = this.GetUICulture();

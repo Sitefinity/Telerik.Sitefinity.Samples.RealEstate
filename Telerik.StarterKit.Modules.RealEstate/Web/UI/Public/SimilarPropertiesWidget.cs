@@ -61,11 +61,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_RealEstateManager == null)
+                if (this.realEstateManager == null)
                 {
-                    this.m_RealEstateManager = RealEstateManager.GetManager();
+                    this.realEstateManager = RealEstateManager.GetManager();
                 }
-                return this.m_RealEstateManager;
+                return this.realEstateManager;
             }
         }
 
@@ -73,11 +73,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_PageManager == null)
+                if (this.pageManager == null)
                 {
-                    this.m_PageManager = PageManager.GetManager();
+                    this.pageManager = PageManager.GetManager();
                 }
-                return this.m_PageManager;
+                return this.pageManager;
             }
         }
 
@@ -85,11 +85,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_TaxonomyManager == null)
+                if (this.taxonomyManager == null)
                 {
-                    this.m_TaxonomyManager = TaxonomyManager.GetManager();
+                    this.taxonomyManager = TaxonomyManager.GetManager();
                 }
-                return this.m_TaxonomyManager;
+                return this.taxonomyManager;
             }
         }
 
@@ -97,14 +97,14 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_CurrentPage == null)
+                if (this.currentPage == null)
                 {
                     SiteMapNode currentNode = SiteMapBase.GetCurrentProvider().CurrentNode;
                     Guid currentPageId = new Guid(currentNode.Key);
-                    this.m_CurrentPage = this.PageManager.GetPageNode(currentPageId);
+                    this.currentPage = this.PageManager.GetPageNode(currentPageId);
                 }
 
-                return this.m_CurrentPage;
+                return this.currentPage;
             }
         }
 
@@ -112,11 +112,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (string.IsNullOrEmpty(this.m_CurrentPageUrl))
+                if (string.IsNullOrEmpty(this.currentPageUrl))
                 {
-                    this.m_CurrentPageUrl = this.CurrentPage.GetFullUrl();
+                    this.currentPageUrl = this.CurrentPage.GetFullUrl();
                 }
-                return this.m_CurrentPageUrl;
+                return this.currentPageUrl;
             }
         }
 
@@ -124,12 +124,12 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_CurrentItem == null)
+                if (this.currentItem == null)
                 {
-                    this.m_CurrentItem = this.ResolveDetailItemFromUrl();
+                    this.currentItem = this.ResolveDetailItemFromUrl();
                 }
 
-                return this.m_CurrentItem;
+                return this.currentItem;
             }
         }
 
@@ -236,7 +236,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             return new List<RealEstateItem>();
         }
 
-        void ItemsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void ItemsList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -293,11 +293,11 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             return result;
         }
 
-        private RealEstateManager m_RealEstateManager;
-        private PageManager m_PageManager;
-        private TaxonomyManager m_TaxonomyManager;
-        private PageNode m_CurrentPage;
-        private string m_CurrentPageUrl;
-        private RealEstateItem m_CurrentItem;
+        private RealEstateManager realEstateManager;
+        private PageManager pageManager;
+        private TaxonomyManager taxonomyManager;
+        private PageNode currentPage;
+        private string currentPageUrl;
+        private RealEstateItem currentItem;
     }
 }

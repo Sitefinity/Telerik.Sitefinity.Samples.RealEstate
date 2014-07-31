@@ -38,15 +38,15 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
 
     internal static class RealEstateItemHelper
     {
-        private static LibrariesManager s_LibrariesManager;
-        private static TaxonomyManager s_TaxonomyManager;
+        private static LibrariesManager librariesManager;
+        private static TaxonomyManager taxonomyManager;
 
         static RealEstateItemHelper()
         {
-            s_LibrariesManager = new LibrariesManager();
-            s_TaxonomyManager = new TaxonomyManager();
+            librariesManager = new LibrariesManager();
+            taxonomyManager = new TaxonomyManager();
 
-            s_LibrariesManager.Provider.SuppressSecurityChecks = true;
+            librariesManager.Provider.SuppressSecurityChecks = true;
 
         }
 
@@ -56,7 +56,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
 
             if (ids != null && ids.Count > 0)
             {
-                return s_TaxonomyManager.GetTaxon<T>(ids[0]);
+                return taxonomyManager.GetTaxon<T>(ids[0]);
             }
 
             return null;
@@ -68,7 +68,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
             var ids = (TrackedList<Guid>)realEstateItem.GetValue(taxonType.ToString());
             foreach (var id in ids)
             {
-                result.Add(s_TaxonomyManager.GetTaxon<T>(id));
+                result.Add(taxonomyManager.GetTaxon<T>(id));
             }
 
             return result;
@@ -127,7 +127,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
                                     Id = p.Id,
                                     Title = p.Title,
                                     Description = p.Description,
-                                    Url = string.Format("{0}{1}", s_LibrariesManager.GetItemUrl(p), p.Extension)
+                                    Url = string.Format("{0}{1}", librariesManager.GetItemUrl(p), p.Extension)
                                 }
                               )
                               .ToList();
@@ -187,7 +187,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
 
                     if (photo != null)
                     {
-                        url = string.Format("{0}{1}", s_LibrariesManager.GetItemUrl(photo), photo.Extension);
+                        url = string.Format("{0}{1}", librariesManager.GetItemUrl(photo), photo.Extension);
                     }
                 }
             }

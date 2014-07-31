@@ -26,8 +26,8 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         #endregion
 
         #region Fields
-        private string m_ForRentPageUrl = string.Empty;
-        private string m_ForSalePageUrl = string.Empty; 
+        private string forRentPageUrl = string.Empty;
+        private string forSalePageUrl = string.Empty; 
         #endregion
 
         #region Properties
@@ -176,7 +176,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             return items;
         }
 
-        void SlidesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void SlidesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -210,45 +210,45 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             Literal ltrPrice = (Literal)e.Item.FindControl("ltrPrice");
             ltrPrice.Text = item.Price.ToString("n2");
 
-            RadListView FeaturesList = (RadListView)e.Item.FindControl("FeaturesList");
-            FeaturesList.ItemDataBound += new EventHandler<RadListViewItemEventArgs>(FeaturesList_ItemDataBound);
-            FeaturesList.DataSource = item.GetTaxons<FlatTaxon>(TaxonType.Features);
-            FeaturesList.DataBind();
+            RadListView featuresList = (RadListView)e.Item.FindControl("FeaturesList");
+            featuresList.ItemDataBound += new EventHandler<RadListViewItemEventArgs>(FeaturesList_ItemDataBound);
+            featuresList.DataSource = item.GetTaxons<FlatTaxon>(TaxonType.Features);
+            featuresList.DataBind();
         }
 
         private string GetDetailsPageUrl(bool isForSale)
         {
             if (isForSale)
             {
-                if (m_ForSalePageUrl.IsNullOrEmpty() && !this.ForSalePageId.Equals(Guid.Empty))
+                if (forSalePageUrl.IsNullOrEmpty() && !this.ForSalePageId.Equals(Guid.Empty))
                 {
                     PageNode pageNode = App.WorkWith().Page(this.ForSalePageId).Get();
 
                     if (pageNode != null)
                     {
-                        m_ForSalePageUrl = pageNode.GetFullUrl();
+                        forSalePageUrl = pageNode.GetFullUrl();
                     }
                 }
 
-                return m_ForSalePageUrl;
+                return forSalePageUrl;
             }
             else
             {
-                if (m_ForRentPageUrl.IsNullOrEmpty() && !this.ForRentPageId.Equals(Guid.Empty))
+                if (forRentPageUrl.IsNullOrEmpty() && !this.ForRentPageId.Equals(Guid.Empty))
                 {
                     PageNode pageNode = App.WorkWith().Page(this.ForRentPageId).Get();
 
                     if (pageNode != null)
                     {
-                        m_ForRentPageUrl = pageNode.GetFullUrl();
+                        forRentPageUrl = pageNode.GetFullUrl();
                     }
                 }
 
-                return m_ForRentPageUrl;
+                return forRentPageUrl;
             }
         }
 
-        void FeaturesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void FeaturesList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -261,7 +261,7 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
             ltrFeature.Text = feature.Title;
         }
 
-        void CarouselList_ItemDataBound(object sender, RadListViewItemEventArgs e)
+        private void CarouselList_ItemDataBound(object sender, RadListViewItemEventArgs e)
         {
             if (e.Item.ItemType != RadListViewItemType.DataItem && e.Item.ItemType != RadListViewItemType.AlternatingItem)
             {
@@ -302,14 +302,14 @@ namespace Telerik.StarterKit.Modules.RealEstate.Web.UI.Public
         {
             get
             {
-                if (this.m_RealEstateManager == null)
+                if (this.realEstateManager == null)
                 {
-                    this.m_RealEstateManager = RealEstateManager.GetManager();
+                    this.realEstateManager = RealEstateManager.GetManager();
                 }
-                return this.m_RealEstateManager;
+                return this.realEstateManager;
             }
         }
 
-        private RealEstateManager m_RealEstateManager;
+        private RealEstateManager realEstateManager;
     }
 }

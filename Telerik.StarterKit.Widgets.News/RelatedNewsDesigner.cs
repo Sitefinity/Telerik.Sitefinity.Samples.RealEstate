@@ -104,6 +104,5 @@ namespace Telerik.StarterKit.Widgets.News
         }
 
         #endregion
-
     }
 }

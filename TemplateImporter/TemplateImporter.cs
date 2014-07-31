@@ -38,14 +38,14 @@ namespace TemplateImporter
         /// <summary>
         /// Initializes a new instance of the <see cref="TemplateImporter" /> class.
         /// </summary>
-        /// <param name="ZipFileName">Name of the zip file.</param>
+        /// <param name="zipFileName">Name of the zip file.</param>
         /// <param name="applicationPath">The application path.</param>
-        public TemplateImporter(string ZipFileName, string applicationPath)
+        public TemplateImporter(string zipFileName, string applicationPath)
         {
             string uniqueExtension = DateTime.Now.ToFileTime().ToString();
 
             this.applicationPath = applicationPath;
-            this.zipFileName = ZipFileName;
+            this.zipFileName = zipFileName;
 
             this.templateExtractionFolder = string.Concat(applicationPath, "App_Data\\temp_", uniqueExtension, "\\");
             this.sitefinityTemplatesInstallationFolder = string.Concat(applicationPath, "App_Data\\Sitefinity\\WebsiteTemplates\\");
@@ -75,14 +75,14 @@ namespace TemplateImporter
                 {
 
                     //set template title
-                    if (templateobject.metadata == null || templateobject.metadata.metadataitems == null)
+                    if (templateobject.Metadata == null || templateobject.Metadata.Metadataitems == null)
                     {
                         pageTemplate.Name = "untitled";
                         pageTemplate.Title = "untitled";
                     }
                     else
                     {
-                        string title = templateobject.metadata.metadataitems.Where(m => m.id == "title").First().value;
+                        string title = templateobject.Metadata.Metadataitems.Where(m => m.Id == "title").First().Value;
 
                         pageTemplate.Name = title;
                         pageTemplate.Title = title;
@@ -119,7 +119,7 @@ namespace TemplateImporter
 
                     UploadImages(imagesTargetFolder, pageTemplate.Name);
 
-                    if (templateobject.layout != null)
+                    if (templateobject.Layout != null)
                     {
                         RegisterTemplate();
                     }
@@ -137,7 +137,6 @@ namespace TemplateImporter
             {
                 File.Delete(fileToExtract);
                 DeleteTemporaryFolder(templateExtractionFolder);
-
             }
             return success;
         }
@@ -160,10 +159,8 @@ namespace TemplateImporter
             }
             catch (Exception)
             {
-
             }
         }
-
 
         /// <summary>
         /// Extracts the specified zip file name to the specified directory.
@@ -185,11 +182,11 @@ namespace TemplateImporter
 
                 }
             }
+
             catch (System.Exception)
             {
             }
         }
-
 
         /// <summary>
         /// Creates the template folder structure.
@@ -261,50 +258,50 @@ namespace TemplateImporter
 
             pageTemplate.MasterPage = string.Concat("~/App_Data/Sitefinity/WebsiteTemplates/", pageTemplate.Name, "/App_Master/page.master");
 
-            for (int i = 0; i < templateobject.layout.placeholders.Length; i++)
+            for (int i = 0; i < templateobject.Layout.placeholders.Length; i++)
             {
-                var placeholder = templateobject.layout.placeholders[i];
+                var placeholder = templateobject.Layout.placeholders[i];
 
-                for (int j = 0; j < placeholder.layoutwidget.columns.Length; j++)
+                for (int j = 0; j < placeholder.Layoutwidget.Columns.Length; j++)
                 {
 
-                    var column = placeholder.layoutwidget.columns[j];
+                    var column = placeholder.Layoutwidget.Columns[j];
 
-                    var widget = column.widget;
-                    if (widget.type != null)
+                    var widget = column.Widget;
+                    if (widget.Type != null)
                     {
                         ControlData ctrlData = null;
-                        if (widget.type.ToLower() == "content block")
+                        if (widget.Type.ToLower() == "content block")
                         {
                             ContentBlockBase newContentBlock = new ContentBlockBase();
-                            newContentBlock.Html = widget.properties.text;
-                            newContentBlock.CssClass = widget.cssclass;
+                            newContentBlock.Html = widget.Properties.Text;
+                            newContentBlock.CssClass = widget.Cssclass;
                             newContentBlock.LayoutTemplatePath = "~/SFRes/Telerik.Sitefinity.Resources.Templates.Backend.GenericContent.ContentBlock.ascx";
 
-                            var templateContentBlock = pageManager.CreateControl<Telerik.Sitefinity.Pages.Model.TemplateControl>(newContentBlock, widget.sfID);
+                            var templateContentBlock = pageManager.CreateControl<Telerik.Sitefinity.Pages.Model.TemplateControl>(newContentBlock, widget.SfID);
                             templateContentBlock.Caption = "Content Block";
 
                             pageTemplate.Controls.Add(templateContentBlock);
                             ctrlData = templateContentBlock;
                         }
-                        else if (widget.type.ToLower() == "image")
+                        else if (widget.Type.ToLower() == "image")
                         {
                             ImageControl newImage = new ImageControl();
                             newImage.LayoutTemplatePath = "~/SFRes/Telerik.Sitefinity.Resources.Templates.PublicControls.ImageControl.ascx";
-                            newImage.CssClass = widget.cssclass;
-                            newImage.ImageId = GetImageId(widget.properties.filename, pageTemplate.Name);
+                            newImage.CssClass = widget.Cssclass;
+                            newImage.ImageId = GetImageId(widget.Properties.Filename, pageTemplate.Name);
 
-                            var templateImageControl = pageManager.CreateControl<Telerik.Sitefinity.Pages.Model.TemplateControl>(newImage, widget.sfID);
+                            var templateImageControl = pageManager.CreateControl<Telerik.Sitefinity.Pages.Model.TemplateControl>(newImage, widget.SfID);
                             templateImageControl.Caption = "Image";
 
                             pageTemplate.Controls.Add(templateImageControl);
                             ctrlData = templateImageControl;
 
                         }
-                        else if (widget.type.ToLower() == "navigation")
+                        else if (widget.Type.ToLower() == "navigation")
                         {
 
-                            string type = widget.properties.navigationtype;
+                            string type = widget.Properties.Navigationtype;
                             NavigationControl navigation = new NavigationControl();
 
                             navigation.SelectionMode = PageSelectionModes.TopLevelPages;
@@ -335,9 +332,9 @@ namespace TemplateImporter
                             }
 
                             navigation.NavigationMode = navigationMode;
-                            navigation.Skin = widget.cssclass;
+                            navigation.Skin = widget.Cssclass;
 
-                            var templateNavigationControl = pageManager.CreateControl<Telerik.Sitefinity.Pages.Model.TemplateControl>(navigation, widget.sfID);
+                            var templateNavigationControl = pageManager.CreateControl<Telerik.Sitefinity.Pages.Model.TemplateControl>(navigation, widget.SfID);
                             templateNavigationControl.Caption = "Navigation";
 
                             pageTemplate.Controls.Add(templateNavigationControl);
@@ -362,7 +359,6 @@ namespace TemplateImporter
             master = pageManager.TemplatesLifecycle.CheckIn(master);
             pageManager.TemplatesLifecycle.Publish(master);
             pageManager.SaveChanges();
-
         }
 
         protected CultureInfo GetCurrentLanguage()
@@ -379,12 +375,12 @@ namespace TemplateImporter
         /// <summary>
         /// Deletes the temporary folder.
         /// </summary>
-        /// <param name="FolderName">Name of the folder.</param>
-        private void DeleteTemporaryFolder(string FolderName)
+        /// <param name="folderName">Name of the folder.</param>
+        private void DeleteTemporaryFolder(string folderName)
         {
             try
             {
-                DirectoryInfo dir = new DirectoryInfo(FolderName);
+                DirectoryInfo dir = new DirectoryInfo(folderName);
                 dir.Delete(true);
             }
             catch (Exception)

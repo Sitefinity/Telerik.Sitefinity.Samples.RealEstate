@@ -97,13 +97,13 @@ namespace TemplateImporter
                     // Reset the Virtual path manager, whenever the section of the VirtualPathSettingsConfig is saved.
                     // This is needed so that the prefixes for templates in our module assembly are taken into account.
                     VirtualPathManager.Reset();
-
                 }
             }
         }
 
         public override void Upgrade(SiteInitializer initializer, Version upgradeFrom)
-        { }
+        { 
+        }
 
         protected override ConfigSection GetModuleConfig()
         {
@@ -115,17 +115,17 @@ namespace TemplateImporter
             var pageManager = initializer.PageManager;
             var moduleNode = pageManager.GetPageNode(SiteInitializer.DesignNodeId);
 
-            PageNode TemplateImporterNode = pageManager.GetPageNodes().Where(p => p.Id == TemplateImporterModule.TemplateImporterPageGroupID).SingleOrDefault();
-            if (TemplateImporterNode == null)
+            PageNode templateImporterNode = pageManager.GetPageNodes().Where(p => p.Id == TemplateImporterModule.TemplateImporterPageGroupID).SingleOrDefault();
+            if (templateImporterNode == null)
             {
-                TemplateImporterNode = initializer.CreatePageNode(TemplateImporterModule.TemplateImporterPageGroupID, moduleNode, NodeType.Group);
+                templateImporterNode = initializer.CreatePageNode(TemplateImporterModule.TemplateImporterPageGroupID, moduleNode, NodeType.Group);
 
-                TemplateImporterNode.Name = TemplateImporterModule.ModuleName;
-                TemplateImporterNode.ShowInNavigation = true;
-                TemplateImporterNode.Attributes["ModuleName"] = TemplateImporterModule.ModuleName;
-                TemplateImporterNode.Title = TemplateImporterModule.ModuleName;
-                TemplateImporterNode.UrlName = TemplateImporterModule.ModuleName;
-                TemplateImporterNode.Description = "Module for importing Template packages";
+                templateImporterNode.Name = TemplateImporterModule.ModuleName;
+                templateImporterNode.ShowInNavigation = true;
+                templateImporterNode.Attributes["ModuleName"] = TemplateImporterModule.ModuleName;
+                templateImporterNode.Title = TemplateImporterModule.ModuleName;
+                templateImporterNode.UrlName = TemplateImporterModule.ModuleName;
+                templateImporterNode.Description = "Module for importing Template packages";
             }
 
             var landingPage = pageManager.GetPageNodes().SingleOrDefault(p => p.Id == this.LandingPageId);
@@ -155,7 +155,7 @@ namespace TemplateImporter
                    control
                 };
                 
-                initializer.CreatePageFromConfiguration(pageInfo, TemplateImporterNode, pageControls);
+                initializer.CreatePageFromConfiguration(pageInfo, templateImporterNode, pageControls);
             }
         }
     }

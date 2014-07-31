@@ -12,13 +12,12 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
     {
         public RealEstateFluentMetadataSource()
             : base(null)
-        { }
-
+        { 
+        }
 
         public RealEstateFluentMetadataSource(IDatabaseMappingContext context)
             : base(context)
         {
-
         }
 
         protected override IList<IOpenAccessFluentMapping> BuildCustomMappings()
@@ -26,7 +25,6 @@ namespace Telerik.StarterKit.Modules.RealEstate.Data
             var sitefinityMappings = base.BuildCustomMappings();
             sitefinityMappings.Add(new RealEstateFluentMapping(this.Context));
             return sitefinityMappings;
-
         }
     }
 }

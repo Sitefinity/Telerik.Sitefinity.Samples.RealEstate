@@ -1,3 +1,13 @@
 *.dll
 *.pdb
 *.nupkg
+SitefinityWebApp/.nuget/NuGet.exe
+SitefinityWebApp/App_Data/Sitefinity/Logs/*
+*.lic
+SitefinityWebApp/packages/*
+SitefinityWebApp/ResourcePackages/*
+*.user
+*.Cache
+*.suo
+bin/
+obj/

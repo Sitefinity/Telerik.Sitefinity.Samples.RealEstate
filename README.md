@@ -32,7 +32,7 @@ Clear the NuGet cache files. To do this:
 You need to attach the database backup files to your SQL Server. To do this:
 
 1. In SQL Management Studio, open the context menu of _Databases_ and click _Attach..._
-2. Click the _Add..._ button and navigate to the _SitefinityWebApp_ -> *App_Data* folder.
+2. Click the _Add..._ button and navigate to the _SitefinityWebApp_ » *App_Data* folder.
 3. Select the **SitefinityRealEstateStarterKit.mdf** file and click _OK_.
 4. Click _OK_.
 
@@ -44,26 +44,21 @@ For a history and additional information related to package versions on differen
 
 ### Installation instructions: SDK Samples from GitHub
 
-
-
-1. In Solution Explorer, navigate to _SitefinityWebApp_ -> *App_Data* -> _Sitefinity_ -> _Configuration_ and select the **DataConfig.config** file. 
+1. In Solution Explorer, navigate to _SitefinityWebApp_ » *App_Data* » _Sitefinity_ » _Configuration_ and select the **DataConfig.config** file.
 2. Modify the **connectionString** value to match your server address.
 
 
-For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases]
- (https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.RealEstate/releases).
+For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.RealEstate/releases).
 
 
 ### Login
 
-To login to Sitefinity backend, use the following credentials: 
-
-**Username:** admin
+To login to Sitefinity backend, use the following credentials:  
+**Username:** admin  
 **Password:** password
 
 
 ### Additional resources
-
-[Developer's Guide](http://www.sitefinity.com/documentation/documentationarticles/developers-guide)
-[Integration with OpenAccess Enhancer](http://www.sitefinity.com/documentation/documentationarticles/developers-guide/sitefinity-essentials/modules/creating-custom-modules/creating-products-module/preparing-the-project/integrating-the-openaccess-enhancer)
+Sitefinity documentation:
+* [Develop: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content) 
 

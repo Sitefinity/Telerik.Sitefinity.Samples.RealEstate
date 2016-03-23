@@ -269,7 +269,7 @@ namespace Telerik.StarterKit.Modules.RealEstate
             //installs the default Tags and Category taxonomies
             this.InstallTaxonomy(initializer, typeof(RealEstateItem));
 
-            var metaMan = initializer.Context.MetadataManager;
+            var metaMan = initializer.MetadataManager;
             var taxMan = initializer.TaxonomyManager;
             var type = this.GetMetaType(initializer, typeof(RealEstateItem));
 
@@ -395,7 +395,7 @@ namespace Telerik.StarterKit.Modules.RealEstate
 
             #endregion
 
-            initializer.Context.MetadataManager.SaveChanges(false);
+            initializer.MetadataManager.SaveChanges(false);
             //taxMan.SaveChanges();
         }
 
@@ -531,7 +531,7 @@ namespace Telerik.StarterKit.Modules.RealEstate
         private MetaType GetMetaType(SiteInitializer initializer, Type type)
         {
 
-            var metaMan = initializer.Context.MetadataManager;
+            var metaMan = initializer.MetadataManager;
             var scope = (metaMan.Provider as IOpenAccessDataProvider).GetContext();
             var result = scope.GetDirtyObjects<MetaType>().FirstOrDefault(mt => mt.ClassName == type.Name && mt.Namespace == type.Namespace);
             if (result == null)

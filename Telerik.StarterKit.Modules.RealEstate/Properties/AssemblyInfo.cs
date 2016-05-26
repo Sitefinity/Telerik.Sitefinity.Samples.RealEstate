@@ -33,8 +33,8 @@ using System.Web.UI;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.*")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("9.1.6100.0")]
+[assembly: AssemblyFileVersion("9.1.6100.0")]
 
 [assembly: WebResource(Telerik.StarterKit.Modules.RealEstate.Web.UI.Controls.TaxonomyDropDown.script, "application/x-javascript")]
 [assembly: WebResource(Telerik.StarterKit.Modules.RealEstate.Web.UI.Controls.TaxonomyCheckBox.script, "application/x-javascript")]

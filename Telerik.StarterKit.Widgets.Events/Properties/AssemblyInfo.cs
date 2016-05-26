@@ -33,8 +33,8 @@ using System.Web.UI;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("9.1.6100.0")]
+[assembly: AssemblyFileVersion("9.1.6100.0")]
 
 [assembly: WebResource("Telerik.StarterKit.Widgets.Events.Resources.Scripts.RelatedEventsDesigner.js", "application/x-javascript")]
 [assembly: WebResource("Telerik.StarterKit.Widgets.Events.Resources.Scripts.EventsCalendarDesigner.js", "application/x-javascript")]

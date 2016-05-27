@@ -2,8 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitefinityWebApp", "SitefinityWebApp.csproj", "{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.Sitefinity.Samples.Common", "..\Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj", "{CF03FB62-A8CC-42B4-9C81-87920C530D74}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Modules.Agents", "..\Telerik.StarterKit.Modules.Agents\Telerik.StarterKit.Modules.Agents.csproj", "{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.StarterKit.Modules.RealEstate", "..\Telerik.StarterKit.Modules.RealEstate\Telerik.StarterKit.Modules.RealEstate.csproj", "{E541FED4-E70D-4E31-9F7F-75D2A3B9EC56}"
@@ -38,12 +36,6 @@ Global
 		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release Pro|Any CPU.Build.0 = Release Pro|Any CPU
 		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0E0CD3E-E40F-4497-814F-F3C3170FFBFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.Build.0 = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEDF868A-C8F4-4B1B-9562-0E0A41F7CA33}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
